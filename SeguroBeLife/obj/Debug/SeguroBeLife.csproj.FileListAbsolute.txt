@@ -1,0 +1,5 @@
+C:\Users\danie\source\repos\SeguroBeLife\SeguroBeLife\bin\Debug\SeguroBeLife.dll
+C:\Users\danie\source\repos\SeguroBeLife\SeguroBeLife\bin\Debug\SeguroBeLife.pdb
+C:\Users\danie\source\repos\SeguroBeLife\SeguroBeLife\obj\Debug\SeguroBeLife.csprojAssemblyReference.cache
+C:\Users\danie\source\repos\SeguroBeLife\SeguroBeLife\obj\Debug\SeguroBeLife.dll
+C:\Users\danie\source\repos\SeguroBeLife\SeguroBeLife\obj\Debug\SeguroBeLife.pdb

@@ -5,10 +5,86 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BeLife.Vista"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="800" Background="White"
       Title="ListadoCliente">
 
     <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />        
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
         
+        
+        <!--fila del data grid  tabla-->
+        <Grid Grid.Row="2"  >            
+            <DataGrid x:Name="DGlistadoClientes" HorizontalAlignment="Center" Background="Lavender"  VerticalAlignment="Stretch" Width="800" SelectionChanged="DataGrid_SelectionChanged"/>
+        </Grid>
+        
+        <!--fila filtro por-->
+        <Grid Grid.Row="3"  >
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="0.1*"/>
+            <ColumnDefinition  Width="1*"/>
+            <ColumnDefinition  Width="1*"/>
+            <ColumnDefinition  Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Label Content="Filtrar por :" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+
+            </Grid>
+        </Grid>
+        
+        <!--Fila de label con columnas-->
+        <Grid Grid.Row="4"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="0.3*"/>
+                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition  Width="0.3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Label Content="Rut" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Label Content="Sexo" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Column="3">
+                <Label Content="Estado Civil" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+            </Grid>
+        </Grid>
+
+        <!--seleccion  para filtrar-->
+        <Grid Grid.Row="5"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="0.3*"/>
+                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition  Width="0.3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <TextBox HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="150"/>
+            </Grid>
+            <Grid Grid.Column="2">
+                <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="150"/>
+            </Grid>
+            <Grid Grid.Column="3">
+                <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="150"/>
+            </Grid>
+            <Grid Grid.Column="4">
+                <Button x:Name="BtFiltrar" Content="Filtrar" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="75"/>
+
+            </Grid>
+        </Grid>
+
+
     </Grid>
 </Page>

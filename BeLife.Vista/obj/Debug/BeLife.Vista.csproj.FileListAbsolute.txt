@@ -18,3 +18,5 @@ C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.exe
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.pdb
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarContrato.g.cs
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarContrato.baml
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoCliente.g.cs
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoCliente.baml

@@ -19,19 +19,27 @@
             <Grid Grid.Row="1" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />                
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
 
+                <Grid Grid.Column="3">
+                    <Button x:Name="BtListadoCont" Content="Listado de Contratos"  VerticalAlignment="Stretch" />
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button x:Name="BtContatoVi" Content="Contrato Vida"  VerticalAlignment="Stretch" Click="Button_Click" />
+                </Grid>
                 <Grid Grid.Column="1">
-                    <Button Content="Contrato Vida"  VerticalAlignment="Top" Width="100"/>
+                    <Button x:Name="BtListadoClie" Content="Listado de Clientes"  VerticalAlignment="Stretch" Click="BtListadoClie_Click" />
                 </Grid>
                 <Grid Grid.Column="0">
-                    <Button Content="Registro Cliente"  VerticalAlignment="Top" Width="100" Click="Button_Click_2"/>
+                    <Button x:Name="BtRegistroClie" Content="Registro Cliente"  VerticalAlignment="Stretch"  Click="Button_Click_2"/>
                 </Grid>
 
             </Grid>
-            
-               
+
+
         </Grid>
 
 

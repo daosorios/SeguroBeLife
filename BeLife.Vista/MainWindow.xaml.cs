@@ -23,6 +23,7 @@ namespace BeLife.Vista
         public Home home = new Home();
         public RegistrarCliente registrarCliente = new RegistrarCliente();
         public RegistrarContrato contrato = new RegistrarContrato();
+        public ListadoCliente listadoCliente = new ListadoCliente();
         public MainWindow()
         {
       
@@ -30,7 +31,7 @@ namespace BeLife.Vista
             home.ControladorHome = this; //para llamar la pagina desde otra pagina forma para que todas las pagina se comporten como el main
             registrarCliente.ControladorCliente = this;
             contrato.ControladorContrato = this;
-            
+            listadoCliente.ControladorListadoCliente = this;
 
             miFrame.NavigationService.Navigate(home);
         }

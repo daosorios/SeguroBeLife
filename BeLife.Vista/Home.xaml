@@ -34,7 +34,8 @@
                     <Button x:Name="BtListadoClie" Content="Listado de Clientes"  VerticalAlignment="Stretch" Click="BtListadoClie_Click" />
                 </Grid>
                 <Grid Grid.Column="0">
-                    <Button x:Name="BtRegistroClie" Content="Registro Cliente"  VerticalAlignment="Stretch"  Click="Button_Click_2"/>
+                    <Button x:Name="BtRegistroClie" Content="Registro Cliente"  VerticalAlignment="Stretch"  Click="Button_Click_2"/>                 
+                    
                 </Grid>
 
             </Grid>

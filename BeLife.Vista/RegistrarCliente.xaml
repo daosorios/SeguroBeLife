@@ -28,7 +28,7 @@
              <!--cada fila tiene columnas-->
             <Grid Grid.Row="1"  >
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition  Width="0.1*"/>
+                    <ColumnDefinition  Width="0.2*"/>
                     <ColumnDefinition  Width="1*" />
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
@@ -49,7 +49,7 @@
             
             <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition  Width="0.1*"/>
+                    <ColumnDefinition  Width="0.2*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
@@ -67,7 +67,7 @@
             
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition  Width="0.1*"/>
+                    <ColumnDefinition  Width="0.2*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
@@ -84,7 +84,7 @@
             
             <Grid Grid.Row="4">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition  Width="0.1*"/>
+                    <ColumnDefinition  Width="0.2*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
@@ -101,7 +101,7 @@
 
             <Grid Grid.Row="5">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition  Width="0.1*"/>
+                    <ColumnDefinition  Width="0.2*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
@@ -118,7 +118,7 @@
             
             <Grid Grid.Row="6">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition  Width="0.1*"/>
+                    <ColumnDefinition  Width="0.2*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
@@ -134,7 +134,7 @@
             </Grid>
             <Grid Grid.Row="8">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition  Width="0.1*"/>
+                    <ColumnDefinition  Width="0.2*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>
                     <ColumnDefinition  Width="1*"/>

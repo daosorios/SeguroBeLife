@@ -12,5 +12,18 @@ namespace SeguroBeLife
         public String Nombre       { get; set; }
         public float  PrimaBase    { get; set; }
         public String PolizaActual { get; set; }
+
+        public Plan()
+        {
+            this.Init();
+        }
+
+        void Init()
+        {
+            IdPlan       = String.Empty;
+            Nombre       = String.Empty;
+            PrimaBase    =            0;
+            PolizaActual = String.Empty;
+        }
     }
 }

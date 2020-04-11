@@ -8,6 +8,37 @@ namespace SeguroBeLife
 {
     class Contrato
     {
+        public string   Numero               { get; set; }
+        public DateTime FechaCreacion        { get; set; }
+        public string   RutCliente           { get; set; }
+        public string   CodigoPlan           { get; set; }
+        public DateTime FechaInicioVigencia  { get; set; }
+        public DateTime FechaFinVigencia     { get; set; }
+        public Boolean  Vigente              { get; set; }
+        public Boolean  DeclaracionSalud     { get; set; }
+        public float    PrimaAnual           { get; set; }
+        public float    PrimaMensual         { get; set; }
+        public String   Observaciones        { get; set; }
+
+        public Contrato()
+        {
+            this.Init();
+        }
+
+        void Init()
+        {
+            Numero              =   String.Empty;
+            FechaCreacion       = DateTime.Today;
+            RutCliente          =   String.Empty;
+            CodigoPlan          =   String.Empty;
+            FechaInicioVigencia = DateTime.Today;
+            FechaFinVigencia    = DateTime.Today;
+            Vigente             =          false;
+            DeclaracionSalud    =          false;
+            PrimaAnual          =              0;
+            PrimaMensual        =              0;
+            Observaciones       =   String.Empty;
+        }
     }
 }
 //BD

@@ -8,6 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/clientsearch.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/clientadd.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/clientdelete.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/clientes.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/clientupdate.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contractadd.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contractdelete.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contractsearch.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contractupdate.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contratos.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/datasearch.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/logo%20belife.png")]
 
 

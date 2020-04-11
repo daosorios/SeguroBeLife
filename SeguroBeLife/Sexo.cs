@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeguroBeLife
 {
-    class Cliente
+    class Sexo
     {
     }
 }

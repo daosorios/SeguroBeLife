@@ -61,6 +61,9 @@
     <Compile Include="ListadoCliente.xaml.cs">
       <DependentUpon>ListadoCliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListadoContrato.xaml.cs">
+      <DependentUpon>ListadoContrato.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarCliente.xaml.cs">
       <DependentUpon>RegistrarCliente.xaml</DependentUpon>
     </Compile>
@@ -72,6 +75,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ListadoCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListadoContrato.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

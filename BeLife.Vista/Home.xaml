@@ -34,8 +34,13 @@
                     <Button x:Name="BtListadoClie" Content="Listado de Clientes"  VerticalAlignment="Stretch" Click="BtListadoClie_Click" />
                 </Grid>
                 <Grid Grid.Column="0">
-                    <Button x:Name="BtRegistroClie" Content="Registro Cliente"  VerticalAlignment="Stretch"  Click="Button_Click_2"/>                 
-                    
+                    <Button x:Name="BtRegistroClie" Click="Button_Click_2">
+                        <StackPanel>
+                            <Image HorizontalAlignment="Left" Height="87" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Source="Imagen/Clientes.png"/>
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Empresas</TextBlock>
+                        </StackPanel>
+                    </Button>
+
                 </Grid>
 
             </Grid>

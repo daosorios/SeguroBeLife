@@ -6,8 +6,8 @@
       xmlns:local="clr-namespace:BeLife.Vista"
       mc:Ignorable="d"
       d:DesignHeight="600" d:DesignWidth="800"
-      Background="White"
-      Title="Home">
+      Background="#FFD69CEC"
+      Title="Home" >
 
     <Grid >
         <Grid>
@@ -29,8 +29,8 @@
                 <Grid Grid.Column="3">
                     <Button x:Name="BtListadoCont" VerticalAlignment="Stretch" Background="White" HorizontalAlignment="Stretch" Click="BtListadoCont_Click">
                         <StackPanel>
-                            <Image HorizontalAlignment="Center" Height="76"  VerticalAlignment="Top" Width="75" Source="Imagen/DataSearch.png"/>
-                            <TextBlock HorizontalAlignment="Center" Text="Listado de Contratos"/>
+                            <Image HorizontalAlignment="Center" Height="90"  VerticalAlignment="Center" Width="90" Source="Imagen/DataSearch.png"/>
+                            <TextBlock HorizontalAlignment="Center" Text="Listado de Contratos" FontSize="18" />
                         </StackPanel>
                     </Button>
 
@@ -38,29 +38,30 @@
 
 
                 <Grid Grid.Column="2">
-                    <Button x:Name="BtContatoVi" Click="Button_Click" Background="White" />
-                    <StackPanel>
-                        <Image HorizontalAlignment="Center" Height="89"  VerticalAlignment="Top"  Width="89" Source="Imagen/Contratos.png"/>
-                        <TextBlock HorizontalAlignment="Center" Text="Contrato Vida" Margin="63,0"/>
-                    </StackPanel>
+                    <Button x:Name="BtRegistroContratoVid" Click="Button_Click_2" Background="White">
+                        <StackPanel>
+                            <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="90" Source="Imagen/Contratos.png"/>
+                            <TextBlock HorizontalAlignment="Center" Text="Contrato Vida" FontSize="18"  />
+                        </StackPanel>
+                    </Button>
                 </Grid>
-
+            
 
                 <Grid Grid.Column="1">
                     <Button x:Name="BtListadoClie" VerticalAlignment="Stretch" Click="BtListadoClie_Click" Background="White">
                         <StackPanel>
-                            <Image HorizontalAlignment="Center" Height="65"  VerticalAlignment="Top" Width="72" Source="Imagen/ClientSearch.png"/>
-                            <TextBlock HorizontalAlignment="Center" Text="Listado de Clientes" Height="17"/>
+                            <Image HorizontalAlignment="Center" Height="100"  VerticalAlignment="Top" Width="90" Source="Imagen/ClientSearch.png"/>
+                            <TextBlock HorizontalAlignment="Center" Text="Listado de Clientes" FontSize="18"/>
                         </StackPanel>
                     </Button>
                 </Grid>
 
 
                 <Grid Grid.Column="0">
-                    <Button x:Name="BtRegistroClie" Click="Button_Click_2" Background="White">
+                    <Button x:Name="BtRegistroClie"  Click="Button_Click_2" Background="White" BorderThickness="1" SnapsToDevicePixels="True" Padding="1">
                         <StackPanel>
-                            <Image HorizontalAlignment="Center" Height="92" VerticalAlignment="Top" Width="93" Source="Imagen/Clientes.png"/>
-                            <TextBlock HorizontalAlignment="Center" Text="Clientes" Height="17"/>
+                            <Image HorizontalAlignment="Center" Height="94" VerticalAlignment="Top" Width="120" Source="Imagen/Clientes.png"/>
+                            <TextBlock HorizontalAlignment="Center" Text="Clientes" FontSize="18"/>
                         </StackPanel>
                     </Button>
                 </Grid>

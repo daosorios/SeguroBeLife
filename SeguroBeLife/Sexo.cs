@@ -8,5 +8,7 @@ namespace SeguroBeLife
 {
     class Sexo
     {
+        public int idSexo          { get; set; }
+        public string Descripcion  { get; set; }
     }
 }

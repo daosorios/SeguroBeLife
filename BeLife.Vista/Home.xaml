@@ -5,15 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BeLife.Vista"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="800"
-      Title="Home"> 
+      Title="Home">
 
     <Grid>
-        <Grid>
+        <Grid Margin="0,10,0,0">
             <!--filas principales-->
             <Grid.RowDefinitions>
-                <RowDefinition Height="4*" />
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*" />
+                <RowDefinition Height="3*"/>
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="1" >
@@ -25,19 +24,42 @@
                 </Grid.ColumnDefinitions>
 
                 <Grid Grid.Column="3">
-                    <Button x:Name="BtListadoCont" Content="Listado de Contratos"  VerticalAlignment="Stretch" />
-                </Grid>
-                <Grid Grid.Column="2">
-                    <Button x:Name="BtContatoVi" Content="Contrato Vida"  VerticalAlignment="Stretch" Click="Button_Click" />
-                </Grid>
-                <Grid Grid.Column="1">
-                    <Button x:Name="BtListadoClie" Content="Listado de Clientes"  VerticalAlignment="Stretch" Click="BtListadoClie_Click" />
-                </Grid>
-                <Grid Grid.Column="0">
-                    <Button x:Name="BtRegistroClie" Click="Button_Click_2">
+                    <Button x:Name="BtListadoCont" VerticalAlignment="Stretch" Background="White">
                         <StackPanel>
-                            <Image HorizontalAlignment="Left" Height="87" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Source="Imagen/Clientes.png"/>
-                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Empresas</TextBlock>
+                            <Image HorizontalAlignment="Center" Height="76" Margin="63,0,68,0" VerticalAlignment="Top" Width="75" Source="Imagen/DataSearch.png"/>
+                            <TextBlock HorizontalAlignment="Center" Text="Listado de Contratos"/>
+
+                        </StackPanel>
+                    </Button>
+
+                </Grid>
+
+
+                <Grid Grid.Column="2">
+                    <Button x:Name="BtContatoVi" Click="Button_Click" Background="White" />
+                    <StackPanel>
+                        <Image HorizontalAlignment="Center" Height="89" Margin="63,0,48,0" VerticalAlignment="Top"  Width="89" Source="Imagen/Contratos.png"/>
+                        <TextBlock HorizontalAlignment="Center" Text="Contrato Vida" Margin="63,0"/>
+
+                    </StackPanel>
+                </Grid>
+
+
+                <Grid Grid.Column="1">
+                    <Button x:Name="BtListadoClie" VerticalAlignment="Stretch" Click="BtListadoClie_Click" Background="White">
+                        <StackPanel>
+                            <Image HorizontalAlignment="Center" Height="65" Margin="0,0,0,0" VerticalAlignment="Top" Width="72" Source="Imagen/ClientSearch.png"/>
+                            <TextBlock HorizontalAlignment="Center" Text="Listado de Clientes" Height="17"/>
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+
+                <Grid Grid.Column="0">
+                    <Button x:Name="BtRegistroClie" Click="Button_Click_2" Background="White">
+                        <StackPanel>
+                            <Image HorizontalAlignment="Center" Height="92" Margin="0,0,0,0" VerticalAlignment="Top" Width="93" Source="Imagen/Clientes.png"/>
+                            <TextBlock HorizontalAlignment="Center" Text="Clientes" Height="17"/>
                         </StackPanel>
                     </Button>
 
@@ -49,9 +71,9 @@
         </Grid>
 
 
-        
 
-        
+
+
 
     </Grid>
 </Page>

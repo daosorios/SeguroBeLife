@@ -8,7 +8,18 @@ namespace SeguroBeLife
 {
     class Sexo
     {
-        public int idSexo          { get; set; }
-        public string Descripcion  { get; set; }
+        public int    IdSexo      { get; set; }
+        public string Descripcion { get; set; }
+
+        public Sexo()
+        {
+            this.Init();
+        }
+
+        void Init()
+        {
+            IdSexo      =            0;
+            Descripcion = String.Empty;
+        }
     }
 }

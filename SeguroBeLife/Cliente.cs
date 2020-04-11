@@ -24,5 +24,20 @@ namespace SeguroBeLife
         public DateTime FechaNacimiento { get; set; }
         public int IdSexo { get; set; }
         public int IdEstadoCivil { get; set; }
+
+        public Cliente()
+        {
+            this.Init();
+        }
+
+        void Init()
+        {
+            RutCliente      =   String.Empty;
+            Nombres         =   String.Empty;
+            Apellidos       =   String.Empty;
+            FechaNacimiento = DateTime.Today;
+            IdSexo          =              0;
+            IdEstadoCivil   =              0;
+        }
     }
 }

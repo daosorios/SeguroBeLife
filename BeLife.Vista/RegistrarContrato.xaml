@@ -38,11 +38,11 @@
                     <Label Content="Rut Cliente" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <TextBox HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
+                    <TextBox x:Name="TxRutCliente" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
                 </Grid>
                 <Grid Grid.Column="3">
                     <Grid>
-                        <Button HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="BtBuscarContrato"  Width="150" Height="35" Background="White" >
+                        <Button x:Name="BtBuscarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" >
                             <StackPanel Orientation="Horizontal">
                                 <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ContractSearch.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Buscar</TextBlock>
@@ -64,7 +64,7 @@
                     <Label Content="Código de Plan" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="160"/>
+                    <ComboBox x:Name="CbCodigoPlan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160"/>
                 </Grid>
             </Grid>
             
@@ -80,7 +80,7 @@
                     <Label Content="Fecha Inicio Vigencia" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <DatePicker HorizontalAlignment="Left"  VerticalAlignment="Top"  Width="160"/>
+                    <DatePicker Name="DpFechaInicioVig" HorizontalAlignment="Left"  VerticalAlignment="Top"  Width="160"/>
                 </Grid>
             </Grid>
             
@@ -97,7 +97,7 @@
                     <Label Content="Fecha Fin Vigencia" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <DatePicker HorizontalAlignment="Left"  VerticalAlignment="Top"  Width="160"/>
+                    <DatePicker Name="DpFechaFInVig" HorizontalAlignment="Left"  VerticalAlignment="Top"  Width="160"/>
                 </Grid>
             </Grid>
             
@@ -114,7 +114,7 @@
                     <Label Content="Vigente" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <CheckBox  HorizontalAlignment="Left"  VerticalAlignment="Stretch"/>
+                    <CheckBox  x:Name="ChBVigencia" HorizontalAlignment="Left"  VerticalAlignment="Stretch"/>
 
                 </Grid>
             </Grid>
@@ -131,7 +131,7 @@
                     <Label Content="Declaración de Salud" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <CheckBox  HorizontalAlignment="Left"  VerticalAlignment="Stretch"/>
+                    <CheckBox  x:Name="ChBDeclaracionSalud" HorizontalAlignment="Left"  VerticalAlignment="Stretch"/>
 
                 </Grid>
             </Grid>
@@ -148,7 +148,7 @@
                     <Label Content="Prima Anual" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <TextBox HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
+                    <TextBox x:Name="TxPrimaAnual" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
                 </Grid>
             </Grid>
 
@@ -164,7 +164,7 @@
                     <Label Content="Prima Mensual" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <TextBox HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
+                    <TextBox x:Name="TxPrimaMensual"  HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
                 </Grid>
             </Grid>
 
@@ -180,7 +180,7 @@
                     <Label Content="Observaciones" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <TextBox HorizontalAlignment="Left" Height="50" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+                    <TextBox x:Name="TxObservaciones" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
                 </Grid>
             </Grid>
 
@@ -194,7 +194,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="1">
                     <Grid>
-                        <Button HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="BtCrearContrato"  Width="150" Height="35" Background="White" >
+                        <Button x:Name="BtCrearContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" >
                             <StackPanel Orientation="Horizontal">
                                 <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ContractAdd.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Crear</TextBlock>
@@ -206,7 +206,7 @@
                 
                 <Grid Grid.Column="2">
                     <Grid>
-                        <Button HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="BtActualizarContrato"  Width="150" Height="35" Background="White" >
+                        <Button x:Name="BtActualizarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" >
                             <StackPanel Orientation="Horizontal">
                                 <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ContractUpdate.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Actualizar</TextBlock>
@@ -217,7 +217,7 @@
 
                 <Grid Grid.Column="3">
                     <Grid>
-                        <Button HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="BtTerminarContrato"  Width="150" Height="35" Background="White" >
+                        <Button  x:Name="BtTerminarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="150" Height="35" Background="White" >
                             <StackPanel Orientation="Horizontal">
                                 <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ContractDelete.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Terminar</TextBlock>

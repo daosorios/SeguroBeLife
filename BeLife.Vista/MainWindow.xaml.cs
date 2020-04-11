@@ -24,6 +24,7 @@ namespace BeLife.Vista
         public RegistrarCliente registrarCliente = new RegistrarCliente();
         public RegistrarContrato contrato = new RegistrarContrato();
         public ListadoCliente listadoCliente = new ListadoCliente();
+        public ListadoContrato listadoContrato = new ListadoContrato();
         public MainWindow()
         {
       
@@ -32,6 +33,7 @@ namespace BeLife.Vista
             registrarCliente.ControladorCliente = this;
             contrato.ControladorContrato = this;
             listadoCliente.ControladorListadoCliente = this;
+            listadoContrato.ControladorListadoContrato = this;
 
             miFrame.NavigationService.Navigate(home);
         }

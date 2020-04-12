@@ -26,6 +26,12 @@ namespace BeLife.Vista
             InitializeComponent();
         }
 
+        //boton volver de listado contratos
+        private void BtVolverListadoContrato_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorListadoContrato.miFrame.NavigationService.Navigate(ControladorListadoContrato.home);
+        }
+
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -40,5 +46,7 @@ namespace BeLife.Vista
         {
 
         }
+
+
     }
 }

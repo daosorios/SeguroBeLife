@@ -28,14 +28,7 @@ namespace BeLife.Vista
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.registrarCliente);
-        }
-
-
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.contrato);
+            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.registrarcontrato);
         }
 
         private void BtListadoClie_Click(object sender, RoutedEventArgs e)
@@ -46,6 +39,11 @@ namespace BeLife.Vista
         private void BtListadoCont_Click(object sender, RoutedEventArgs e)
         {
             ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.listadoContrato);
+        }
+
+        private void BtRegistroClie_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.registrarCliente);
         }
     }
 }

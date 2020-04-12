@@ -10,7 +10,7 @@
 
     <Grid>
         <Grid.RowDefinitions >
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="5*" />
@@ -20,8 +20,17 @@
             <RowDefinition Height="1*" />
             
         </Grid.RowDefinitions>
-        
-        
+
+        <Grid Grid.Row="0">
+            <Button x:Name="BtVolverListadoCliente" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFD69CEC" Click="BtVolverListadoCliente_Click"  >
+                <StackPanel Orientation="Horizontal" >
+                    <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/Logo BeLife.png"/>
+                </StackPanel>
+            </Button>
+            <Label Content="Volver" Margin="5" HorizontalAlignment="Left"  VerticalAlignment="Bottom"/>
+            <Label Content="Listado de Clientes" HorizontalAlignment="Right"  VerticalAlignment="Top"/>
+        </Grid>
+
         <Grid Grid.Row="1"  >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition  Width="0.2*"/>
@@ -47,7 +56,7 @@
                 <ColumnDefinition  Width="0.3*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="2">
-                <Button x:Name="BtIrCLiente" Content="Ir a Contrato" HorizontalAlignment="Center" Background="White"  VerticalAlignment="Top" Width="150" Height="35"/>
+                <Button x:Name="BtIrCLiente" Content="Ir a Cliente" HorizontalAlignment="Center" Background="White"  VerticalAlignment="Top" Width="150" Height="35"/>
 
             </Grid>
             <Grid Grid.Column="3">

@@ -22,3 +22,4 @@ C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoCliente.g
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoCliente.baml
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoContrato.g.cs
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoContrato.baml
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\App.baml

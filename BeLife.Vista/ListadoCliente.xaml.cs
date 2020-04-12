@@ -23,7 +23,16 @@ namespace BeLife.Vista
         public MainWindow ControladorListadoCliente;//creando objeto controlador para que se comporte como el main
         public ListadoCliente()
         {
+
             InitializeComponent();
+
+
+        }
+
+        //Boton volver de listado
+        private void BtVolverListadoCliente_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorListadoCliente.miFrame.NavigationService.Navigate(ControladorListadoCliente.home);
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -35,5 +44,7 @@ namespace BeLife.Vista
         {
 
         }
+
+
     }
 }

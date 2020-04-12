@@ -25,5 +25,11 @@ namespace BeLife.Vista
         {
             InitializeComponent();
         }
+
+        //boton volver
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorContrato.miFrame.NavigationService.Navigate(ControladorContrato.home);
+        }
     }
 }

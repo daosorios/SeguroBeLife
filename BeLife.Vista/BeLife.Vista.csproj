@@ -145,5 +145,11 @@
   <ItemGroup>
     <Resource Include="Imagen\ClientSearch.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BeLife.Datos\BeLife.Datos.csproj">
+      <Project>{3b26a365-510e-4520-9797-bb45affd572d}</Project>
+      <Name>BeLife.Datos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

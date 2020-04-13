@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeguroBeLife;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,12 +25,47 @@ namespace BeLife.Vista
         public RegistrarContrato()
         {
             InitializeComponent();
+            CargarPlan();
         }
+
+        private void CargarPlan()
+        {
+            throw new NotImplementedException();
+        }
+
 
         //boton volver
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ControladorContrato.miFrame.NavigationService.Navigate(ControladorContrato.home);
+        }
+
+        private void BtCrearContrato_Click(object sender, RoutedEventArgs e)
+        {
+            //Contrato contrato = new Contrato()
+            //{
+            //    RutCliente = TxRutCliente.Text,
+            //    CodigoPlan = CbCodigoPlan.Text,
+            //    FechaInicioVigencia = DateTime.Today,
+            //    FechaFinVigencia = DateTime.Today,
+            //    Vigente = ChBVigencia.IsChecked.GetValueOrDefault(),
+            //    DeclaracionSalud = ChBDeclaracionSalud.IsChecked.GetValueOrDefault(),
+            //    PrimaAnual = Convert.ToDouble(TxPrimaAnual),
+            //    PrimaMensual = Convert.ToDouble(TxPrimaAnual),
+
+
+            //};
+
+            //Console.WriteLine(cli.ToString());
+            //if (cli.Create())
+            //{
+            //    MessageBox.Show("Cliente registrado", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+            //    Limpiar();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Cliente no pudo ser registrado", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            //}
         }
     }
 }

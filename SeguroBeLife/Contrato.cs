@@ -39,6 +39,56 @@ namespace SeguroBeLife
             PrimaMensual        =              0;
             Observaciones       =   String.Empty;
         }
+
+        public bool CreateContrato()
+        {
+            BeLife.Datos.BeLifeEntities bbdd = new BeLife.Datos.BeLifeEntities();
+            BeLife.Datos.Contrato contrato = new BeLife.Datos.Contrato();
+
+            try
+            {
+                Join.Syncronize(this, contrato);
+
+                contrato.CodigoPlan = ObtenerPlan();
+
+
+                bbdd.Contrato.Add(contrato);
+                bbdd.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                bbdd.Contrato.Remove(contrato);
+                return false;
+                
+            }          
+        }
+        private string ObtenerPlan()
+        {
+            //comparando la descripcion de la base de datos con la de la vista para retornar la id 
+            BeLife.Datos.BeLifeEntities bbdd = new BeLife.Datos.BeLifeEntities();
+            BeLife.Datos.Plan plan = bbdd.Plan.First(s => s.Nombre == CodigoPlan);
+            string Id = plan.IdPlan;
+            return Id;
+        }
+
+
+        //buscar en la base de datos 
+        public bool ReadContrato()
+        {
+            BeLife.Datos.BeLifeEntities bbdd = new BeLife.Datos.BeLifeEntities();
+
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return true;
+        }
     }
 }
 //BD

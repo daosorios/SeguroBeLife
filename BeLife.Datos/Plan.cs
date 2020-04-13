@@ -10,6 +10,7 @@
 namespace BeLife.Datos
 {
     using System;
+    using System.Collections;
     using System.Collections.Generic;
     
     public partial class Plan
@@ -22,6 +23,12 @@ namespace BeLife.Datos
     
         public string IdPlan { get; set; }
         public string Nombre { get; set; }
+
+        public IEnumerable ReadAllEstado()
+        {
+            throw new NotImplementedException();
+        }
+
         public double PrimaBase { get; set; }
         public string PolizaActual { get; set; }
     

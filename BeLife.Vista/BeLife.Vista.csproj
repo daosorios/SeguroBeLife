@@ -150,6 +150,10 @@
       <Project>{3b26a365-510e-4520-9797-bb45affd572d}</Project>
       <Name>BeLife.Datos</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SeguroBeLife\SeguroBeLife.csproj">
+      <Project>{0c91aea5-b938-4a42-b20a-10a3dca7bdce}</Project>
+      <Name>SeguroBeLife</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -207,7 +207,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="1">
                     <Grid>
-                        <Button x:Name="BtCrearContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" >
+                        <Button x:Name="BtCrearContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" Click="BtCrearContrato_Click" >
                             <StackPanel Orientation="Horizontal">
                                 <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ContractAdd.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Crear</TextBlock>

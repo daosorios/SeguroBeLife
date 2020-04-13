@@ -53,7 +53,12 @@
                     <TextBox  x:Name="TxRut" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
                 </Grid>
                 <Grid Grid.Column="3">
-                    <Button x:Name="BtBuscarCliente" Content="Buscar" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="90"/>
+                    <Button x:Name="BtBuscarCliente"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="85" Background="White">
+                        <StackPanel Orientation="Horizontal" >
+                            <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ClientSearch.png"/>
+                            <Label Content="Buscar" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        </StackPanel>
+                    </Button>
 
                 </Grid>
             </Grid>
@@ -154,14 +159,29 @@
                     <ColumnDefinition  Width="0.1*"/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="1">
-                    <Button  x:Name="BtRegistrarCliente" Content="Registrar" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="90"/>
+                    <Button  x:Name="BtRegistrarCliente" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="94" Click="BtRegistrarCliente_Click" Background="White">
+                        <StackPanel Orientation="Horizontal" Width="87" >
+                            <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ClientAdd.png"/>
+                            <Label Content="Registrar" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        </StackPanel>
+                    </Button>
 
                 </Grid>
                 <Grid Grid.Column="2">
-                    <Button x:Name="BtActualizarCliente" Content="Actualizar" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="90"/>
+                    <Button x:Name="BtActualizarCliente" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="99" Background="White">
+                        <StackPanel Orientation="Horizontal" >
+                            <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ClientUpdate.png"/>
+                            <Label  Content="Actualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62"/>
+                        </StackPanel>
+                    </Button>
                 </Grid>
                 <Grid Grid.Column="3">
-                    <Button x:Name="BtEliminarCliente" Content="Eliminar" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="90"/>
+                    <Button x:Name="BtEliminarCliente" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="93" Background="White" >
+                        <StackPanel Orientation="Horizontal" >
+                            <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ClientDelete.png"/>
+                            <Label   Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        </StackPanel>
+                    </Button>
                 </Grid>
 
             </Grid>

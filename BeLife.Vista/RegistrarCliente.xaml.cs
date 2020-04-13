@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BeLife.Datos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace BeLife.Vista
 {
     /// <summary>
@@ -21,15 +23,21 @@ namespace BeLife.Vista
     public partial class RegistrarCliente : Page
     {
         public MainWindow ControladorCliente;//creando objeto controlador para que se comporte como el main
-        public RegistrarCliente()
+
+        public  RegistrarCliente()
         {
-            InitializeComponent();
+            InitializeComponent ();
+            Limpiar             ();
+            
         }
 
-        //Boton volver cliente
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Limpiar()/* Limpia los controles de texto */
         {
-            ControladorCliente.miFrame.NavigationService.Navigate(ControladorCliente.home);
+            TxRut.Text        =  string.Empty;
+            TxNombres.Text    =  string.Empty;
+            TxApellidos.Text  =  string.Empty;
         }
+
+        
     }
 }

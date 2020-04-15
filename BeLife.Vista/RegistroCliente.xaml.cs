@@ -38,7 +38,7 @@ namespace BeLife.Vista
 
             /* Configura los datos en el ComboBOx */
             CbSexo.DisplayMemberPath = "Descripcion"; //Propiedad para mostrar
-            CbSexo.SelectedValuePath = "Descripcion"; //Propiedad con el valor a rescatar
+            CbSexo.SelectedValuePath = "IdSexo"; //Propiedad con el valor a rescatar
 
             CbSexo.SelectedIndex = 0; //Posiciona en el primer registro
 
@@ -52,7 +52,7 @@ namespace BeLife.Vista
 
             /* Configura los datos en el ComboBOx */
             CbEstadoCivil.DisplayMemberPath = "Descripcion"; //Propiedad para mostrar
-            CbEstadoCivil.SelectedValuePath = "Descripcion"; //Propiedad con el valor a rescatar
+            CbEstadoCivil.SelectedValuePath = "IdEstadoCivi"; //Propiedad con el valor a rescatar
 
             CbEstadoCivil.SelectedIndex = 0; //Posiciona en el primer registro
 

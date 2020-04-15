@@ -28,8 +28,13 @@ namespace BeLife.Negocio
             Nombres = string.Empty;
             Apellidos = string.Empty;
             FechaNacimiento = DateTime.Today;
+<<<<<<< Updated upstream:BeLife.Negocio/Cliente.cs
             IdSexo = string.Empty;
             IdEstadoCivil = string.Empty;
+=======
+            IdSexo          =             0 ;
+            IdEstadoCivil   =             0 ;
+>>>>>>> Stashed changes:SeguroBeLife/Cliente.cs
         }
 
         //agregar el nuevo cliente en la base de dato y guarda los cambios de esta.
@@ -49,7 +54,6 @@ namespace BeLife.Negocio
                 bbdd.SaveChanges();
                 
                 return true;
-
             }
             catch (Exception ex)
             {

@@ -61,9 +61,6 @@ namespace BeLife.Negocio
             {
                 CommonBC.Syncronize(this, con);
 
-
-
-
                 bbdd.Contrato.Add(con);
                 bbdd.SaveChanges();
 

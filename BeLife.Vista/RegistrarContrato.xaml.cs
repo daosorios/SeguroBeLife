@@ -84,18 +84,7 @@ namespace BeLife.Vista
                 Observaciones = "sdfdsf"
 
 
-                //BORRAR DESPUES EJMEPLO
-                //Termino = DateTime.Today,
-                //RutCliente = txtRutCliente.Text,
-                //IdTipoEvento = (int)ComboTipoEvento.SelectedValue,
-                //IdModalidad = ComboModalidad.SelectedValue.ToString(),
-                //FechaHoraInicio = DateTime.Parse(fecha + Hora),
-                //FechaHoraTermino = DateTime.Parse(fechat + Horat),
-                //Asistentes = int.Parse(txtAsistentes.Text),
-                //PersonalAdicional = Convert.ToInt32(ComboAdicional.SelectedValue),
-                //Realizado = (bool)checkRealizado.IsChecked,
-                //ValorTotalContrato = 1,
-                //Observaciones = txtObservaciones.Text
+               ////kjnsajbavjfsjnvdo,pvdomvk
 
 
             };

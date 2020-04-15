@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\
 BeLife.Vista
 none
 false
 DEBUG;TRACE
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\App.xaml
-4999729274
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\App.xaml
+61635930430
 
-92072199428
-13-1505183044
-Home.xaml;MainWindow.xaml;RegistrarCliente.xaml;RegistrarContrato.xaml;
+11-1971234780
+18-1605095747
+Home.xaml;ListadoCliente.xaml;ListadoContrato.xaml;MainWindow.xaml;RegistrarContrato.xaml;RegistroCliente.xaml;
 
 True
 

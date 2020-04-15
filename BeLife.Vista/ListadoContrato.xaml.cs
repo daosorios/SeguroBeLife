@@ -21,32 +21,10 @@ namespace BeLife.Vista
     public partial class ListadoContrato : Page
     {
         public MainWindow ControladorListadoContrato;//creando objeto controlador para que se comporte como el main
+
         public ListadoContrato()
         {
             InitializeComponent();
         }
-
-        //boton volver de listado contratos
-        private void BtVolverListadoContrato_Click(object sender, RoutedEventArgs e)
-        {
-            ControladorListadoContrato.miFrame.NavigationService.Navigate(ControladorListadoContrato.home);
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
     }
 }

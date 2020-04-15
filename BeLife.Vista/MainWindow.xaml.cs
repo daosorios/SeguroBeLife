@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BeLife.Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,13 +22,12 @@ namespace BeLife.Vista
     public partial class MainWindow : Window
     {
         public Home home = new Home();
-        public RegistrarCliente registrarCliente = new RegistrarCliente();
+        public RegistroCliente registrarCliente = new RegistroCliente();
         public RegistrarContrato registrarcontrato = new RegistrarContrato();
         public ListadoCliente listadoCliente = new ListadoCliente();
         public ListadoContrato listadoContrato = new ListadoContrato();
         public MainWindow()
         {
-      
             InitializeComponent();
             home.ControladorHome = this; //para llamar la pagina desde otra pagina forma para que todas las pagina se comporten como el main
             registrarCliente.ControladorCliente = this;
@@ -35,7 +35,17 @@ namespace BeLife.Vista
             listadoCliente.ControladorListadoCliente = this;
             listadoContrato.ControladorListadoContrato = this;
 
-            miFrame.NavigationService.Navigate(home); 
+            miFrame.NavigationService.Navigate(home);
+
+            CargarSexo();
         }
-    }
-}
+
+
+
+        private void CargarSexo()
+        {
+            /* Carga todas los cliente */
+            Sexo sexo = new Sexo();
+
+        }
+    }}

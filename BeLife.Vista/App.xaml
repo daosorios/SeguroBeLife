@@ -4,9 +4,6 @@
              xmlns:local="clr-namespace:BeLife.Vista"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-
-        <Color x:Key="Color2">#FFD69CEC</Color>
-        <Color x:Key="Color1">#FFD69CEC</Color>
-
+         
     </Application.Resources>
 </Application>

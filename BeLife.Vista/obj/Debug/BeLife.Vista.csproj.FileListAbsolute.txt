@@ -1,49 +1,70 @@
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\BeLife.Vista.exe.config
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\BeLife.Vista.exe
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\BeLife.Vista.pdb
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.csprojAssemblyReference.cache
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\MainWindow.g.cs
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\App.g.cs
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\BeLife.Vista_MarkupCompile.cache
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\BeLife.Vista_MarkupCompile.lref
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\MainWindow.baml
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.g.resources
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.Properties.Resources.resources
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.csproj.GenerateResource.cache
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.exe
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.pdb
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\Home.g.cs
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\RegistroCliente.g.cs
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\ListadoCliente.g.cs
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\ListadoContrato.g.cs
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\RegistrarContrato.g.cs
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\Home.baml
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\RegistroCliente.baml
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\ListadoCliente.baml
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\ListadoContrato.baml
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\RegistrarContrato.baml
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\BeLife.Negocio.dll
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\BeLife.Datos.dll
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\EntityFramework.dll
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\BeLife.Negocio.pdb
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\BeLife.Negocio.dll.config
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\BeLife.Datos.pdb
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\BeLife.Datos.dll.config
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\EntityFramework.xml
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.csproj.CopyComplete
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Vista\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Vista.exe.config
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Vista.exe
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Vista.pdb
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Datos.dll
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Negocio.dll
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\EntityFramework.dll
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Datos.pdb
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Datos.dll.config
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Negocio.pdb
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Negocio.dll.config
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\EntityFramework.xml
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.csprojAssemblyReference.cache
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\Home.g.cs
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoCliente.g.cs
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoContrato.g.cs
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\MainWindow.g.cs
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarCliente.g.cs
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarContrato.g.cs
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistroCliente.g.cs
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\App.g.cs
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista_MarkupCompile.cache
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista_MarkupCompile.lref
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\Home.baml
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoCliente.baml
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoContrato.baml
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\MainWindow.baml
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarCliente.baml
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarContrato.baml
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistroCliente.baml
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.g.resources
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.Properties.Resources.resources
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.csproj.GenerateResource.cache
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.csproj.CopyComplete
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.exe
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.pdb
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarContrato.g.cs
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarContrato.baml
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoCliente.g.cs
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoCliente.baml
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoContrato.g.cs
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoContrato.baml
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\App.baml
-<<<<<<< Updated upstream
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.csprojAssemblyReference.cache
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\Home.g.cs
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoCliente.g.cs
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\ListadoContrato.g.cs
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\MainWindow.g.cs
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarCliente.g.cs
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\RegistrarContrato.g.cs
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\App.g.cs
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista_MarkupCompile.cache
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista_MarkupCompile.lref
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.exe
-C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\EA5\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.pdb
-=======
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Datos.dll
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\EntityFramework.dll
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Datos.pdb
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\BeLife.Datos.dll.config
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\EntityFramework.xml
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\obj\Debug\BeLife.Vista.csproj.CopyComplete
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\SeguroBeLife.dll
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\SeguroBeLife.pdb
-C:\Users\danie\source\repos\SeguroBeLife\BeLife.Vista\bin\Debug\SeguroBeLife.dll.config
->>>>>>> Stashed changes

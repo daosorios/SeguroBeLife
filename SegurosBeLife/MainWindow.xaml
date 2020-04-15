@@ -1,0 +1,47 @@
+﻿<Window x:Class="SegurosBeLife.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SegurosBeLife"
+        mc:Ignorable="d"
+        Title="Registro Cliente" Height="900" Width="700">
+    <Grid>
+        <Label x:Name="LBrut" Content="Rut" HorizontalAlignment="Left" Margin="67,70,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBnombre" Content="Nombre" HorizontalAlignment="Left" Margin="67,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.493,-0.811"/>
+        <Label x:Name="LBapellido" Content="Apellido" HorizontalAlignment="Left" Margin="67,157,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBfechaNac" Content="Fecha Nacimiento" HorizontalAlignment="Left" Margin="67,212,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBrut" HorizontalAlignment="Left" Height="23" Margin="208,74,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="183"/>
+        <TextBox x:Name="TBnombre" HorizontalAlignment="Left" Height="23" Margin="208,112,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="183"/>
+        <TextBox x:Name="TBapellido" HorizontalAlignment="Left" Height="23" Margin="208,157,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="183"/>
+        <DatePicker x:Name="DGfechanacimiento" HorizontalAlignment="Left" Margin="208,213,0,0" VerticalAlignment="Top" Width="183"/>
+        <Label x:Name="LBsexo" Content="Sexo" HorizontalAlignment="Left" Margin="67,270,0,0" VerticalAlignment="Top"/>
+        <Label Content="Estado Civil" HorizontalAlignment="Left" Margin="67,325,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CBsexo" HorizontalAlignment="Left" Margin="208,274,0,0" VerticalAlignment="Top" Width="183" SelectionChanged="CBsexo_SelectionChanged">
+        </ComboBox>
+        
+        <ComboBox x:Name="CBestadocivil" HorizontalAlignment="Left" Margin="208,325,0,0" VerticalAlignment="Top" Width="183">
+        </ComboBox>
+        <DataGrid x:Name="DGlista" HorizontalAlignment="Left" Height="229" Margin="67,433,0,0" VerticalAlignment="Top" Width="505" RenderTransformOrigin="0.494,0.436"/>
+        <Button x:Name="BTregistrar" Content="Registrar" HorizontalAlignment="Left" Margin="448,213,0,0" VerticalAlignment="Top" Width="75" Click="BTregistrar_Click"/>
+        <Button x:Name="BTactualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="448,270,0,0" VerticalAlignment="Top" Width="75" Click="BTactualizar_Click"/>
+        <Button x:Name="BTeliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="448,327,0,0" VerticalAlignment="Top" Width="75" Click="BTeliminar_Click"/>
+        <Button x:Name="BTbuscar" Content="Buscar" HorizontalAlignment="Left" Margin="448,77,0,0" VerticalAlignment="Top" Width="75" Click="BTbuscar_Click"/>
+        <Label Content="Lista de Clientes" HorizontalAlignment="Left" Margin="67,402,0,0" VerticalAlignment="Top" Width="162"/>
+        <Label Content="Filtrar por:" HorizontalAlignment="Left" Margin="67,695,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBsexo_Copy" Content="Sexo" HorizontalAlignment="Left" Margin="86,731,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.486,0.257"/>
+        <ComboBox x:Name="CBsexo_filtrar" HorizontalAlignment="Left" Margin="86,765,0,0" VerticalAlignment="Top" Width="143" SelectionChanged="CBsexo_SelectionChanged">
+            <ComboBoxItem Content="Femenino"/>
+            <ComboBoxItem Content="Masculino"/>
+        </ComboBox>
+        <Label Content="Estado Civil" HorizontalAlignment="Left" Margin="288,731,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CBestadocivil_filtrar" HorizontalAlignment="Left" Margin="288,765,0,0" VerticalAlignment="Top" Width="154">
+            <ComboBoxItem Content="Soltero"/>
+            <ComboBoxItem Content="Casado"/>
+            <ComboBoxItem Content="Divorciado"/>
+            <ComboBoxItem Content="Viudo"/>
+        </ComboBox>
+        <Button x:Name="BTfiltrar" Content="Filtrar" HorizontalAlignment="Left" Margin="497,765,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

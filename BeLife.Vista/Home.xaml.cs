@@ -20,30 +20,38 @@ namespace BeLife.Vista
     /// </summary>
     public partial class Home : Page
     {
+
         public MainWindow ControladorHome;
+
         public Home()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.registrarcontrato);
-        }
-
-        private void BtListadoClie_Click(object sender, RoutedEventArgs e)
-        {
-            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.listadoCliente);
-        }
-
-        private void BtListadoCont_Click(object sender, RoutedEventArgs e)
-        {
-            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.listadoContrato);
         }
 
         private void BtRegistroClie_Click(object sender, RoutedEventArgs e)
         {
             ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.registrarCliente);
         }
+
+        private void BtListadoClie_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.listadoCliente);
+        }
+        private void BtRegistroContratoVid_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.registrarcontrato);
+        }
+        private void BtListadoCont_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.listadoCliente);
+        }
+
+        //basura
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+
     }
 }

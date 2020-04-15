@@ -4,13 +4,12 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BeLife.Vista"
-      mc:Ignorable="d"
+      mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="800"
       Background="#FFD69CEC"
-      Title="Home" >
+      Title="Home">
 
-
-    <Grid >
+    <Grid>
         <Grid>
 
             <!--filas principales-->
@@ -18,22 +17,21 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="7*" />
                 <RowDefinition Height="3*"/>
-            </Grid.RowDefinitions>          
-            
+            </Grid.RowDefinitions>
+
 
             <!--boton volver-->
             <Grid Grid.Row="0" >
                 <Grid Grid.Column="0">
                     <Button  x:Name="BtVolver" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="100" Background="#FFD69CEC"/>
                     <Label Content="Inicio Seguros BeLife" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-
                 </Grid>
             </Grid>
-            
+
             <!--logo be life -->
             <Grid Grid.Row="1" >
-                <Grid Grid.Column="0">                   
-                    <Image  Source="Imagen/Logo BeLife.png" Height="150" />
+                <Grid Grid.Column="0">
+                    <Image  Source="Imagenes/Logo BeLife.png" Height="150" />
                 </Grid>
             </Grid>
 
@@ -46,12 +44,12 @@
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
 
- 
+
 
                 <Grid Grid.Column="3">
-                    <Button x:Name="BtListadoCont" VerticalAlignment="Stretch" Background="White" HorizontalAlignment="Stretch" Click="BtListadoCont_Click">
+                    <Button x:Name="BtListadoCont" VerticalAlignment="Stretch" Background="White" HorizontalAlignment="Left" Click="BtListadoCont_Click" Width="200">
                         <StackPanel>
-                            <Image HorizontalAlignment="Center" Height="90"  VerticalAlignment="Center" Width="90" Source="Imagen/DataSearch.png"/>
+                            <Image HorizontalAlignment="Center" Height="90"  VerticalAlignment="Center" Width="90" Source="Imagenes/DataSearch.png"/>
                             <TextBlock HorizontalAlignment="Center" Text="Listado de Contratos" FontSize="18" />
                         </StackPanel>
                     </Button>
@@ -60,9 +58,9 @@
 
 
                 <Grid Grid.Column="2">
-                    <Button x:Name="BtRegistroContratoVid" Click="Button_Click_2" Background="White">
+                    <Button x:Name="BtRegistroContratoVid"  Background="White" Click="BtRegistroContratoVid_Click">
                         <StackPanel>
-                            <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="90" Source="Imagen/Contratos.png"/>
+                            <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="90" Source="Imagenes/Contratos.png"/>
                             <TextBlock HorizontalAlignment="Center" Text="Contrato Vida" FontSize="18"  />
                         </StackPanel>
                     </Button>
@@ -72,7 +70,7 @@
                 <Grid Grid.Column="1">
                     <Button x:Name="BtListadoClie" VerticalAlignment="Stretch" Click="BtListadoClie_Click" Background="White">
                         <StackPanel>
-                            <Image HorizontalAlignment="Center" Height="100"  VerticalAlignment="Top" Width="90" Source="Imagen/ClientSearch.png"/>
+                            <Image HorizontalAlignment="Center" Height="100"  VerticalAlignment="Top" Width="90" Source="Imagenes/ClientSearch.png"/>
                             <TextBlock HorizontalAlignment="Center" Text="Listado de Clientes" FontSize="18"/>
                         </StackPanel>
                     </Button>
@@ -82,7 +80,7 @@
                 <Grid Grid.Column="0">
                     <Button x:Name="BtRegistroClie"   Background="White" BorderThickness="1" SnapsToDevicePixels="True" Padding="1" Click="BtRegistroClie_Click">
                         <StackPanel>
-                            <Image HorizontalAlignment="Center" Height="94" VerticalAlignment="Top" Width="120" Source="Imagen/Clientes.png"/>
+                            <Image HorizontalAlignment="Center" Height="94" VerticalAlignment="Top" Width="120" Source="Imagenes/Clientes.png"/>
                             <TextBlock HorizontalAlignment="Center" Text="Clientes" FontSize="18"/>
                         </StackPanel>
                     </Button>
@@ -93,4 +91,5 @@
         </Grid>
 
     </Grid>
+
 </Page>

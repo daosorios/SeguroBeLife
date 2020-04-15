@@ -27,10 +27,10 @@
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
 
-            <Grid Grid.Row="0">                
-                <Button x:Name="BtVolverContrato" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFD69CEC" Click="Button_Click" >
-                    <StackPanel Orientation="Horizontal" >                       
-                        <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/Logo BeLife.png"/>                        
+            <Grid Grid.Row="0">
+                <Button x:Name="BtVolverContrato" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFD69CEC" Click="BtVolverContrato_Click" >
+                    <StackPanel Orientation="Horizontal" >
+                        <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/Logo BeLife.png"/>
                     </StackPanel>
                 </Button>
                 <Label Content="Volver" Margin="5" HorizontalAlignment="Left"  VerticalAlignment="Bottom"/>
@@ -57,7 +57,7 @@
                     <Grid>
                         <Button x:Name="BtBuscarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" >
                             <StackPanel Orientation="Horizontal">
-                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ContractSearch.png"/>
+                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractSearch.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Buscar</TextBlock>
                             </StackPanel>
                         </Button>
@@ -77,7 +77,8 @@
                     <Label Content="Código de Plan" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <ComboBox x:Name="CbCodigoPlan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160"/>
+
+                    <ComboBox x:Name="CbCodigoPlan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" />
                 </Grid>
             </Grid>
 
@@ -207,9 +208,9 @@
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="1">
                     <Grid>
-                        <Button x:Name="BtCrearContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" >
+                        <Button x:Name="BtCrearContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" Click="BtCrearContrato_Click"  >
                             <StackPanel Orientation="Horizontal">
-                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ContractAdd.png"/>
+                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractAdd.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Crear</TextBlock>
                             </StackPanel>
                         </Button>
@@ -219,9 +220,9 @@
 
                 <Grid Grid.Column="2">
                     <Grid>
-                        <Button x:Name="BtActualizarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" >
+                        <Button x:Name="BtActualizarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White"  >
                             <StackPanel Orientation="Horizontal">
-                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ContractUpdate.png"/>
+                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractUpdate.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Actualizar</TextBlock>
                             </StackPanel>
                         </Button>
@@ -232,21 +233,14 @@
                     <Grid>
                         <Button  x:Name="BtTerminarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="150" Height="35" Background="White" >
                             <StackPanel Orientation="Horizontal">
-                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagen/ContractDelete.png"/>
+                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractDelete.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Terminar</TextBlock>
                             </StackPanel>
                         </Button>
                     </Grid>
                 </Grid>
 
-
-
-
             </Grid>
-
-
         </Grid>
-
-
     </Grid>
 </Page>

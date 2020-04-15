@@ -8,16 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/clientadd.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/clientdelete.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/clientes.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/clientupdate.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contractadd.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contractdelete.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contractsearch.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contractupdate.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/contratos.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/datasearch.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagen/logo%20belife.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/clientadd.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/clientdelete.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/clientes.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/clientsearch.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/clientupdate.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/contractadd.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/contractdelete.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/contractsearch.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/contractupdate.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/contratos.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/datasearch.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imagenes/logo%20belife.png")]
 
 

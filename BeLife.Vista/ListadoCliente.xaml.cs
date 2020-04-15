@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BeLife.Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,30 +22,24 @@ namespace BeLife.Vista
     public partial class ListadoCliente : Page
     {
         public MainWindow ControladorListadoCliente;//creando objeto controlador para que se comporte como el main
+
         public ListadoCliente()
         {
-
             InitializeComponent();
-
+            CargarCliente();
 
         }
 
-        //Boton volver de listado
+        public void CargarCliente()
+        {
+            //cargar los empleados en la data grid 
+            Cliente clientes = new Cliente();
+            DGlistadoClientes.ItemsSource = clientes.ReadAll();
+        }
+
         private void BtVolverListadoCliente_Click(object sender, RoutedEventArgs e)
         {
             ControladorListadoCliente.miFrame.NavigationService.Navigate(ControladorListadoCliente.home);
         }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
     }
 }

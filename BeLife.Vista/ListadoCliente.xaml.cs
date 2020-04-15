@@ -41,5 +41,10 @@ namespace BeLife.Vista
         {
             ControladorListadoCliente.miFrame.NavigationService.Navigate(ControladorListadoCliente.home);
         }
+
+        private void DGlistadoClientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

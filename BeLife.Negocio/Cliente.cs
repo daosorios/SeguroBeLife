@@ -30,13 +30,8 @@ namespace BeLife.Negocio
             Nombres = string.Empty;
             Apellidos = string.Empty;
             FechaNacimiento = DateTime.Today;
-<<<<<<< Updated upstream:BeLife.Negocio/Cliente.cs
             IdSexo = string.Empty;
             IdEstadoCivil = string.Empty;
-=======
-            IdSexo          =             0 ;
-            IdEstadoCivil   =             0 ;
->>>>>>> Stashed changes:SeguroBeLife/Cliente.cs
         }
 
         //agregar el nuevo cliente en la base de dato y guarda los cambios de esta.
@@ -198,6 +193,71 @@ namespace BeLife.Negocio
             //retorna la lista
             return listaRegistro;
         }
+        public IEnumerable<Cliente> ReadSE(string rut, int idSexo, int idEstado)
+        {
+            if (rut.Length > 0 && idSexo > 0 && idEstado > 0)
+            {
+                IEnumerable<Cliente> RutySexoyEstado = from d in ReadAll()
+                                                       where d.RutCliente == rut && d.IdSexo == idSexo.ToString() && d.IdEstadoCivil == idEstado.ToString()
+                                                       select d;
+                return RutySexoyEstado;
+            }
+
+            else if (rut.Length > 0 && idSexo > 0 && idEstado == 0)
+            {
+                IEnumerable<Cliente> RutySexo = from d in ReadAll()
+                                                where d.RutCliente == rut && d.IdSexo == idSexo.ToString()
+                                                select d;
+                return RutySexo;
+            }
+
+
+            else if (rut.Length > 0 && idSexo == 0 && idEstado > 0)
+            {
+                IEnumerable<Cliente> RutyEstado = from d in ReadAll()
+                                                  where d.RutCliente == rut && d.IdEstadoCivil == idEstado.ToString()
+                                                  select d;
+                return RutyEstado;
+            }
+
+            else if (rut.Length > 0 && idSexo == 0 && idEstado == 0)
+            {
+                IEnumerable<Cliente> rutt = from d in ReadAll()
+                                            where d.RutCliente == rut
+                                            select d;
+                return rutt;
+            }
+
+            else if (idSexo > 0 && idEstado > 0)
+            {
+                IEnumerable<Cliente> SexoyEstado = from d in ReadAll()
+                                                   where d.IdSexo == idSexo.ToString() && d.IdEstadoCivil == idEstado.ToString()
+                                                   select d;
+                return SexoyEstado;
+            }
+            else if (idSexo > 0 && idEstado == 0)
+            {
+                IEnumerable<Cliente> Sexo = from d in ReadAll()
+                                            where d.IdSexo == idSexo.ToString()
+                                            select d;
+                return Sexo;
+            }
+            else if (idSexo == 0 && idEstado > 0)
+            {
+                IEnumerable<Cliente> Estado = from d in ReadAll()
+                                              where d.IdEstadoCivil == idEstado.ToString()
+                                              select d;
+                return Estado;
+
+            }
+            else
+            {
+                return ReadAll();
+            }
+
+        }
+
+
     }
 
 

@@ -27,6 +27,8 @@ namespace BeLife.Vista
         {
             InitializeComponent();
             Limpiar();
+            CargarSexo();
+            CargarEstado();
         }
 
 
@@ -77,13 +79,13 @@ namespace BeLife.Vista
         private void BtRegistrarCliente_Click(object sender, RoutedEventArgs e)
         {
             Cliente cli = new Cliente()
-            {
-                RutCliente = TxRut.Text,
-                Nombres = TxNombres.Text,
-                Apellidos = TxApellidos.Text,
+            {      
+                RutCliente      = TxRut.Text,
+                Nombres         = TxNombres.Text,
+                Apellidos       = TxApellidos.Text,
                 FechaNacimiento = DateTime.Today,
-                IdSexo = CbSexo.SelectedValue.ToString(),
-                IdEstadoCivil = CbEstadoCivil.SelectedValue.ToString()
+                IdSexo          = CbSexo.SelectedIndex.ToString(),
+                IdEstadoCivil   = CbEstadoCivil.SelectedValue.ToString()
             };
 
             

@@ -129,7 +129,7 @@
                     <Label Content="Sexo" HorizontalAlignment="Left" VerticalAlignment="Top" />
                 </Grid>
                 <Grid Grid.Column="2">
-                    <ComboBox x:Name="CbSexo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160">
+                    <ComboBox x:Name="CbSexo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" SelectedIndex="0">
                     </ComboBox>
 
                 </Grid>
@@ -148,7 +148,7 @@
                     <Label Content="Estado Civil" HorizontalAlignment="Left" VerticalAlignment="Top" />
                 </Grid>
                 <Grid Grid.Column="2">
-                    <ComboBox x:Name="CbEstadoCivil" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160"/>
+                    <ComboBox x:Name="CbEstadoCivil" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" SelectedIndex="0"/>
                 </Grid>
 
             </Grid>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BeLife.Datos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,19 +31,18 @@ namespace BeLife.Negocio
 
         void Init()
         {
-            Numero = String.Empty;
-            CodigoPlan = string.Empty;
+            Numero = string.Empty;
             FechaCreacion = DateTime.Today;
-            RutCliente = String.Empty;
-            CodigoPlan = String.Empty;
+            RutCliente = string.Empty;
+            CodigoPlan = string.Empty;
             FechaInicioVigencia = DateTime.Today;
             FechaFinVigencia = DateTime.Today;
-            Vigente = false;
-            DeclaracionSalud = false;
-            PrimaAnual = 0;
-            PrimaMensual = 0;
-            Observaciones = String.Empty;
-            
+            Vigente = true;
+            DeclaracionSalud = true;
+            PrimaAnual = 0.0;
+            PrimaMensual = 0.0;
+            Observaciones = string.Empty;
+
         }
 
 
@@ -54,7 +54,6 @@ namespace BeLife.Negocio
         {
             //metodo crear contrato base de dato
             Datos.BeLifeEntities bbdd = new Datos.BeLifeEntities();
-
             Datos.Contrato con = new Datos.Contrato();
 
             try
@@ -68,7 +67,7 @@ namespace BeLife.Negocio
             }
             catch (Exception)
             {
-                bbdd.Dispose();
+                bbdd.Contrato.Remove(con);
                 return false;
             }
         }
@@ -100,26 +99,27 @@ namespace BeLife.Negocio
 
         public bool UpdateContrato()
         {
-
             //Actualizar contrato base de dato
-            Datos.BeLifeEntities bbdd = new Datos.BeLifeEntities();
-
+           BeLifeEntities bbdd = new BeLifeEntities();
+            /* Se obtiene el primer registro coincidente con el Rut */
+            Datos.Contrato contrato = bbdd.Contrato.First(e => e.Numero == Numero);
             try
             {
-                /* Se obtiene el primer registro coincidente con el Rut */
-                Datos.Contrato contrato = bbdd.Contrato.First(e => e.RutCliente == RutCliente);
-
                 /* Se copian las propiedades del negocio a los datos */
-               CommonBC.Syncronize(contrato, this);
+                CommonBC.Syncronize(this, contrato);
 
                 bbdd.SaveChanges();
 
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine(e);
                 return false;
+       
             }
+
+
 
         }
 

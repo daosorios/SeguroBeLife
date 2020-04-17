@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BeLife.Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,36 @@ namespace BeLife.Vista
         public ListadoContrato()
         {
             InitializeComponent();
+            CargarContrato();
         }
+
+        private void BtVolverListadoContrato_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorListadoContrato.miFrame.NavigationService.Navigate(ControladorListadoContrato.home);
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CargarContrato()
+        {
+            /* Carga todos los Empleados */
+            Contrato contrato = new Contrato();
+            DGListadoContrato.ItemsSource = contrato.ReadAll();
+        }
+
     }
 }
+

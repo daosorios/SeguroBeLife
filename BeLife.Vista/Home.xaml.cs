@@ -43,7 +43,7 @@ namespace BeLife.Vista
         }
         private void BtListadoCont_Click(object sender, RoutedEventArgs e)
         {
-            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.listadoCliente);
+            ControladorHome.miFrame.NavigationService.Navigate(ControladorHome.listadoContrato);
         }
 
         //basura

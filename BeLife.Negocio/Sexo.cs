@@ -38,7 +38,7 @@ namespace BeLife.Negocio
                 /* Se retorna la lista */
                 return listadoSexo;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 return new List<Sexo>();
 

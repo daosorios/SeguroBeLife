@@ -158,7 +158,7 @@ namespace BeLife.Negocio
                 //retrona la lista al datagrid
                 return listaRegistro;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
                 return new List<Cliente>();

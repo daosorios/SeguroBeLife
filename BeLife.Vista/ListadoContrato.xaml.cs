@@ -44,10 +44,18 @@ namespace BeLife.Vista
 
         }
 
+        public void SFiltro()
+        {
+            Contrato con = new Contrato();
+            DGListadoContrato.ItemsSource = con.ReadSF(TxNumFiltroContrato.Text,TxRutFiltroContrato.Text,TxFiltroNumPoliza.Text);
+        }//contrato, rut, poli
+        
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            SFiltro();
         }
+
+
 
         private void CargarContrato()
         {
@@ -56,6 +64,16 @@ namespace BeLife.Vista
             DGListadoContrato.ItemsSource = contrato.ReadAll();
         }
 
+
+        public void Filtro()
+        {
+            Contrato con = new Contrato();
+            DGListadoContrato.ItemsSource = con.ReadF(TxBuscarNumContrato.Text);
+        }
+        private void BtListaBuscarContrato_Click(object sender, RoutedEventArgs e)
+        {
+            Filtro();
+        }
     }
 }
 

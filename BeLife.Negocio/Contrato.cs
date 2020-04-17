@@ -191,8 +191,87 @@ namespace BeLife.Negocio
             return listadoContrato;
         }
 
+        public IEnumerable<Contrato> ReadSF(string numero, String rut, string poliza)
+        {
+            if (rut.Length > 0 && numero.Length > 0 && poliza.Length > 0)
+            {
+                IEnumerable< Contrato > abc = from d in ReadAll()
+                                                       where d.RutCliente == rut && d.Numero == numero.ToString() && d.CodigoPlan == poliza.ToString()
+                                                          select d;
+                return abc;
+            }
+
+            else if (rut.Length > 0 && numero.Length > 0 && poliza.Length == 0)
+            {
+                IEnumerable<Contrato> ab = from d in ReadAll()
+                                                where d.RutCliente == rut && d.Numero == numero.ToString()
+                                                select d;
+                return ab;
+            }
 
 
+            else if (rut.Length > 0 && numero.Length == 0 && poliza.Length > 0)
+            {
+                IEnumerable<Contrato> ac = from d in ReadAll()
+                                                  where d.RutCliente == rut && d.CodigoPlan == poliza.ToString()
+                                                  select d;
+                return ac;
+            }
+
+            else if (rut.Length > 0 && numero.Length == 0 && poliza.Length == 0)
+            {
+                IEnumerable<Contrato> a= from d in ReadAll()
+                                            where d.RutCliente == rut
+                                            select d;
+                return a;
+            }
+
+            else if (numero.Length > 0 && poliza.Length > 0)
+            {
+                IEnumerable<Contrato> ac = from d in ReadAll()
+                                                   where d.Numero == numero.ToString() && d.CodigoPlan == poliza.ToString()
+                                                   select d;
+                return ac;
+            }
+            else if (numero.Length > 0 && poliza.Length == 0)
+            {
+                IEnumerable<Contrato> a = from d in ReadAll()
+                                            where d.Numero == numero.ToString()
+                                            select d;
+                return a;
+            }
+            else if (numero.Length == 0 && poliza.Length > 0)
+            {
+                IEnumerable<Contrato> c = from d in ReadAll()
+                                              where d.CodigoPlan == poliza.ToString()
+                                              select d;
+                return c;
+
+            }
+            else
+            {
+                return ReadAll();
+            }
+
+        }
+
+        public IEnumerable<Contrato> ReadF(string numero)
+        {
+            
+            if (numero.Length > 0 )
+            {
+                IEnumerable<Contrato> a = from d in ReadAll()
+                                          where d.Numero == numero.ToString()
+                                          select d;
+                return a;
+            }
+            
+            else
+            {
+                return ReadAll();
+            }
+
+        }
     }
 }
 

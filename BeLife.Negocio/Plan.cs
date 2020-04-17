@@ -45,7 +45,7 @@ namespace BeLife.Negocio
                 /* Se retorna la lista */
                 return listadoPlan;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 return new List<Plan>();
 

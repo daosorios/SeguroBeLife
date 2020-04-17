@@ -76,8 +76,10 @@ namespace BeLife.Vista
 
         }
 
+        //boton registrar cliente listo no tocar 
         private void BtRegistrarCliente_Click(object sender, RoutedEventArgs e)
         {
+            
             Cliente cli = new Cliente()
             {      
                 RutCliente      = TxRut.Text,

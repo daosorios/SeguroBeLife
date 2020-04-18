@@ -33,11 +33,12 @@ namespace BeLife.Vista
         public void CargarCliente()
         {
             //cargar los empleados en la data grid 
-            Cliente clientes = new Cliente();        
-
+            Cliente clientes = new Cliente();            
             DGlistadoClientes.ItemsSource = clientes.ReadAll();
            
         }
+        
+      
 
         private void BtVolverListadoCliente_Click(object sender, RoutedEventArgs e)
         {

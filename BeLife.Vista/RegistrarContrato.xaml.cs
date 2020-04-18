@@ -48,6 +48,7 @@ namespace BeLife.Vista
             TxPrimaMensual.Text = string.Empty;
             TxObservaciones.Text = string.Empty;
             CbCodigoPlan.SelectedIndex = 0;
+            NContrato.Content = "";
             CargarContrato();
 
             //bloquear los datos
@@ -57,7 +58,8 @@ namespace BeLife.Vista
             TxPrimaAnual.IsEnabled = true;
             TxPrimaMensual.IsEnabled = true;
             ChBDeclaracionSalud.IsEnabled = true;
-
+            CbCodigoPlan.IsEnabled = true;
+            
         }
 
         //cargar el combobox 
@@ -87,8 +89,7 @@ namespace BeLife.Vista
             contrato.FechaFinVigencia = (DateTime)DpFechaFInVig.SelectedDate;
             contrato.PrimaMensual = Convert.ToDouble(TxPrimaMensual.Text);
             contrato.PrimaAnual = Convert.ToDouble(TxPrimaAnual.Text);
-            contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();
-            //contrato.CodigoPlan = "VID05";
+            contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();        
             contrato.Observaciones = TxObservaciones.Text;
 
             if (ChBDeclaracionSalud.IsChecked == true)
@@ -111,6 +112,7 @@ namespace BeLife.Vista
             }
 
             contrato.Numero = Convert.ToDateTime((DateTime.Now)).ToString("yyyyMMddhhmmss");
+
             if (contrato.CreateContrato())
             {
                 MessageBox.Show("Contrato registrado", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -232,6 +234,48 @@ namespace BeLife.Vista
         private void BtLimpiarCliente_Click(object sender, RoutedEventArgs e)
         {
             LimpiarControles();
+        }
+
+        private void BtTerminarContrato_Click(object sender, RoutedEventArgs e)
+        {
+            Contrato contrato = new Contrato();
+            contrato.Numero = NContrato.Content.ToString();
+            contrato.RutCliente = TxRutCliente.Text;
+            contrato.FechaCreacion = (DateTime)DpFechaCreacion.SelectedDate;
+            contrato.FechaInicioVigencia = (DateTime)DpFechaInicioVig.SelectedDate;
+            contrato.FechaFinVigencia = (DateTime)DpFechaFInVig.SelectedDate;
+            contrato.PrimaMensual = Convert.ToDouble(TxPrimaMensual.Text);
+            contrato.PrimaAnual = Convert.ToDouble(TxPrimaAnual.Text);
+            contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();
+            //contrato.CodigoPlan = "VID05";
+            contrato.Observaciones = TxObservaciones.Text;
+
+            if (ChBVigencia.IsChecked == true)
+            {
+                contrato.Vigente = false;
+            }
+            else
+            {
+                contrato.Vigente = false;
+            }
+            if (ChBDeclaracionSalud.IsChecked == true)
+            {
+                contrato.DeclaracionSalud = true;
+            }
+            else
+            {
+                contrato.DeclaracionSalud = false;
+            }
+
+            if (contrato.DeleteContrato())
+            {
+                MessageBox.Show("Contrato Terminado", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+                LimpiarControles();
+            }
+            else
+            {
+                MessageBox.Show("Contrato no puede ser terminado", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
         }
     }
 }

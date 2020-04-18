@@ -48,5 +48,15 @@ namespace BeLife.Vista
         {
 
         }
+        public void filtro()
+        {
+            Cliente cli = new Cliente();
+            DGlistadoClientes.ItemsSource = cli.ReadSE(TxFiltrarRut.Text, CbFiltrarSexo.SelectedIndex, CbFiltrarEstadoCivil.SelectedIndex);
+        }
+
+        private void BtFiltroListadoCliente_Click(object sender, RoutedEventArgs e)
+        {
+            filtro();
+        }
     }
 }

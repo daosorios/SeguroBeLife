@@ -98,6 +98,9 @@
                     <TextBox x:Name="TxApellidos" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
 
                 </Grid>
+                <Grid Grid.Column="3">
+                    <Button x:Name="BtLimpiarCliente" Content="Limpiar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Height="29" Background="White" Click="BtLimpiarCliente_Click"/>
+                </Grid>
             </Grid>
 
             <Grid Grid.Row="5">

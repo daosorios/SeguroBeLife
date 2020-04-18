@@ -56,6 +56,19 @@ namespace BeLife.Vista
             DGListadoContrato.ItemsSource = contrato.ReadAll();
         }
 
+
+        ////filtro de listado contrato
+        //public void Filtro()
+        //{
+        //    Contrato con = new Contrato();
+        //    DGListadoContrato.ItemsSource = con.ReadF(TxBuscarNumContrato.Text);
+        //}
+        //private void BtListaBuscarContrato_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Filtro();
+        //}
+
     }
+
 }
 

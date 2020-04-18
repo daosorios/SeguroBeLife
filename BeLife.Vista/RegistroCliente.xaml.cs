@@ -174,6 +174,11 @@ namespace BeLife.Vista
             ControladorCliente.miFrame.NavigationService.Navigate(ControladorCliente.home);
         }
 
+        private void BtLimpiarCliente_Click(object sender, RoutedEventArgs e)
+        {
+            Limpiar();
+        }
+
 
 
         //private void CargarCliente()

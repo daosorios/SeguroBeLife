@@ -154,7 +154,7 @@ namespace BeLife.Negocio
 
                 //se envia la lista de Cliente base de datos pra que retorne una lista de Cliente
                 List<Cliente> listaRegistro = GenerarListado(listaDatos);
-
+                
                 //retrona la lista al datagrid
                 return listaRegistro;
             }
@@ -184,7 +184,7 @@ namespace BeLife.Negocio
                 //le cambio el id por descripccion que me trajo el CommonBC.Syncronize(datos, cliente);
                 cliente.IdSexo = datos.Sexo.Descripcion;
                 cliente.IdEstadoCivil = datos.EstadoCivil.Descripcion;
-                //se inserta cliente en la lista de cliente
+                //se inserta cliente en la lista de cliente                
                 listaRegistro.Add(cliente);
 
             }

@@ -167,11 +167,11 @@ namespace BeLife.Vista
                 TxPrimaMensual.IsEnabled = false;
                 ChBDeclaracionSalud.IsEnabled = false;
 
-                MessageBox.Show("Cliente leído", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Contrato leído", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
             {
-                MessageBox.Show("Cliente no pudo ser leído", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                MessageBox.Show("Contrato no pudo ser leído", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
 
@@ -216,12 +216,12 @@ namespace BeLife.Vista
 
             if (contrato.UpdateContrato())
             {
-                MessageBox.Show("Cliente Actualizado", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Contrato Actualizado", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
                 LimpiarControles();
             }
             else
             {
-                MessageBox.Show("Clienteo no pudo ser registrado", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                MessageBox.Show("Contrato no pudo ser registrado", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
 
 

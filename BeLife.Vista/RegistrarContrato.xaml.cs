@@ -228,5 +228,10 @@ namespace BeLife.Vista
 
 
         }
+
+        private void BtLimpiarCliente_Click(object sender, RoutedEventArgs e)
+        {
+            LimpiarControles();
+        }
     }
 }

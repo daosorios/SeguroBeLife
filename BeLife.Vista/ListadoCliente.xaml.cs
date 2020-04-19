@@ -62,11 +62,10 @@ namespace BeLife.Vista
             DGlistadoClientes.ItemsSource = clientes.ReadAll();
            
         }
-        
-      
 
         private void BtVolverListadoCliente_Click(object sender, RoutedEventArgs e)
         {
+            CargarEstado();
             ControladorListadoCliente.miFrame.NavigationService.Navigate(ControladorListadoCliente.home);
         }
 

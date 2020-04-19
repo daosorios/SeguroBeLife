@@ -113,7 +113,7 @@
                 </Grid>
                 <Grid Grid.Column="2">
 
-                    <ComboBox x:Name="CbCodigoPlan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" />
+                    <ComboBox x:Name="CbCodigoPlan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" SelectedIndex="0" />
                 </Grid>
                 <Grid Grid.Column="3">
                     <Button x:Name="BtLimpiarContrato" Content="Limpiar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Height="29" Background="White" Click="BtLimpiarCliente_Click"/>

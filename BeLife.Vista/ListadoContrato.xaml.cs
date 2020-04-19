@@ -31,6 +31,7 @@ namespace BeLife.Vista
 
         private void BtVolverListadoContrato_Click(object sender, RoutedEventArgs e)
         {
+            CargarContrato();
             ControladorListadoContrato.miFrame.NavigationService.Navigate(ControladorListadoContrato.home);
         }
 
@@ -46,8 +47,16 @@ namespace BeLife.Vista
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            BFiltro();
         }
+        public void BFiltro()
+        {
+            Contrato con = new Contrato();
+            DGListadoContrato.ItemsSource = con.ReadS(TxNumFiltroContrato.Text, TxRutFiltroContrato.Text, TxFiltroNumPoliza.Text);
+        }//contrato, rut, poli
+
+
+
 
         private void CargarContrato()
         {
@@ -57,16 +66,16 @@ namespace BeLife.Vista
         }
 
 
-        ////filtro de listado contrato
-        //public void Filtro()
-        //{
-        //    Contrato con = new Contrato();
-        //    DGListadoContrato.ItemsSource = con.ReadF(TxBuscarNumContrato.Text);
-        //}
-        //private void BtListaBuscarContrato_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Filtro();
-        //}
+
+        private void BtListaBuscarContrato_Click(object sender, RoutedEventArgs e)
+        {
+            SFiltro();
+        }
+        public void SFiltro()//small filtro
+        {
+            Contrato con = new Contrato();
+            DGListadoContrato.ItemsSource = con.ReadF(TxBuscarNumContrato.Text);
+        }
 
     }
 

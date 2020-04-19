@@ -171,6 +171,7 @@ namespace BeLife.Vista
 
         private void BtVolverCliente_Click(object sender, RoutedEventArgs e)
         {
+            CargarEstado();
             ControladorCliente.miFrame.NavigationService.Navigate(ControladorCliente.home);
         }
 
@@ -181,12 +182,7 @@ namespace BeLife.Vista
 
 
 
-        //private void CargarCliente()
-        //{
-        //    //cargar los empleados en la data grid 
-        //    Cliente clientes = new Cliente();
-        //    Dglista.ItemsSource = clientes.ReadAll();
-        //}
+        
 
     }
 }

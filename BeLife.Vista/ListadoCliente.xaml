@@ -129,14 +129,14 @@
                 <TextBox x:Name="TxFiltrarRut" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="150"/>
             </Grid>
             <Grid Grid.Column="2">
-                <ComboBox x:Name="CbFiltrarSexo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150"/>
+                <ComboBox x:Name="CbFiltrarSexo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" SelectedIndex="0"/>
             </Grid>
             <Grid Grid.Column="3">
-                <ComboBox x:Name="CbFiltrarEstadoCivil" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150"/>
+                <ComboBox x:Name="CbFiltrarEstadoCivil" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" SelectedIndex="0"/>
             </Grid>
             <Grid Grid.Column="4">
                 <Grid>
-                    <Button  x:Name="BtFiltroListadoCliente"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="35" Background="White" >
+                    <Button  x:Name="BtFiltroListadoCliente"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="35" Background="White" Click="BtFiltroListadoCliente_Click" >
                         <StackPanel Orientation="Horizontal">
                             <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/DataSearch.png"/>
                             <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Filtrar</TextBlock>

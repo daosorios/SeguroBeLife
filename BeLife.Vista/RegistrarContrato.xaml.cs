@@ -23,15 +23,19 @@ namespace BeLife.Vista
     public partial class RegistrarContrato : Page
     {
         public MainWindow ControladorContrato;
+
         public RegistrarContrato()
         {
             InitializeComponent();
             LimpiarControles();
+            CargarContrato();
         }
+
 
         private void BtVolverContrato_Click(object sender, RoutedEventArgs e)
         {
             //boton volver de Ui
+            CargarContrato();
             ControladorContrato.miFrame.NavigationService.Navigate(ControladorContrato.home);
         }
 
@@ -82,13 +86,44 @@ namespace BeLife.Vista
             //boton crear contrato en UI
             Contrato contrato = new Contrato();
 
+            Tarificador pr = new Tarificador();
+
+            Double Prianual    =  pr.Prima_anual(TxRutCliente.Text);
+            
+            if      (CbCodigoPlan.SelectedIndex == 0)
+            {
+                Prianual = Prianual +0.5;
+            }
+            else if (CbCodigoPlan.SelectedIndex == 1)
+            {
+                Prianual = Prianual +3.5;
+            }
+            else if (CbCodigoPlan.SelectedIndex == 2)
+            {
+                Prianual = Prianual +1.2;
+            }
+            else if (CbCodigoPlan.SelectedIndex == 3)
+            {
+                Prianual = Prianual +2;
+            }
+            else if (CbCodigoPlan.SelectedIndex == 4)
+            {
+                Prianual = Prianual +3.5;
+            }
+
+
+            Double Primensual = pr.Prima_anual(TxRutCliente.Text) / 12;
+
 
             contrato.RutCliente = TxRutCliente.Text;
             contrato.FechaCreacion = (DateTime)DpFechaCreacion.SelectedDate;
             contrato.FechaInicioVigencia = (DateTime)DpFechaInicioVig.SelectedDate;
-            contrato.FechaFinVigencia = (DateTime)DpFechaFInVig.SelectedDate;
-            contrato.PrimaMensual = Convert.ToDouble(TxPrimaMensual.Text);
-            contrato.PrimaAnual = Convert.ToDouble(TxPrimaAnual.Text);
+            //el fin de la vigencia se calcula cin el inicio mas 1 año
+            contrato.FechaFinVigencia = ((DateTime)DpFechaInicioVig.SelectedDate).AddYears(1);
+            //registro automatico de la prima mensual
+            contrato.PrimaMensual     =  Primensual;
+            //registro automatico de la prima anual 
+            contrato.PrimaAnual       =    Prianual;
             contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();        
             contrato.Observaciones = TxObservaciones.Text;
 
@@ -123,6 +158,7 @@ namespace BeLife.Vista
                 MessageBox.Show("Contrato no pudo ser registrado", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
+
         private void BtBuscarContrato_Click(object sender, RoutedEventArgs e)
         {
             Contrato con = new Contrato()
@@ -176,8 +212,7 @@ namespace BeLife.Vista
                 MessageBox.Show("Contrato no pudo ser leído", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
-
-
+        
 
         ///Tengo que bloquear todos los datos solo dejar el observaciones***
         private void BtActualizarContrato_Click(object sender, RoutedEventArgs e)
@@ -225,10 +260,6 @@ namespace BeLife.Vista
             {
                 MessageBox.Show("Contrato no pudo ser registrado", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
-
-
-
-
         }
 
         private void BtLimpiarCliente_Click(object sender, RoutedEventArgs e)

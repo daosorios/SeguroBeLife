@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BeLife.Vista"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="900"
       Background="#FFD69CEC"
       Title="Home">
 
@@ -22,9 +22,8 @@
 
             <!--boton volver-->
             <Grid Grid.Row="0" >
-                <Grid Grid.Column="0">
-                    <Button  x:Name="BtVolver" Content="Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="100" Background="#FFD69CEC"/>
-                    <Label Content="Inicio Seguros BeLife" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <Grid Grid.Column="0">                    
+                    <Label Content="Página de Inicio" HorizontalAlignment="Right" VerticalAlignment="Top"/>
                 </Grid>
             </Grid>
 
@@ -47,7 +46,7 @@
 
 
                 <Grid Grid.Column="3">
-                    <Button x:Name="BtListadoCont" VerticalAlignment="Stretch" Background="White" HorizontalAlignment="Left" Click="BtListadoCont_Click" Width="200">
+                    <Button x:Name="BtListadoCont" VerticalAlignment="Stretch" Background="White"  Click="BtListadoCont_Click" >
                         <StackPanel>
                             <Image HorizontalAlignment="Center" Height="90"  VerticalAlignment="Center" Width="90" Source="Imagenes/DataSearch.png"/>
                             <TextBlock HorizontalAlignment="Center" Text="Listado de Contratos" FontSize="18" />
@@ -58,7 +57,7 @@
 
 
                 <Grid Grid.Column="2">
-                    <Button x:Name="BtRegistroContratoVid"  Background="White" Click="BtRegistroContratoVid_Click">
+                    <Button x:Name="BtRegistroContratoVid" VerticalAlignment="Stretch" Background="White" Click="BtRegistroContratoVid_Click">
                         <StackPanel>
                             <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="90" Source="Imagenes/Contratos.png"/>
                             <TextBlock HorizontalAlignment="Center" Text="Contrato Vida" FontSize="18"  />

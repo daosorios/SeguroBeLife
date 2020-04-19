@@ -269,7 +269,7 @@
 
                 <Grid Grid.Column="3">
                     <Grid>
-                        <Button  x:Name="BtTerminarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="150" Height="35" Background="White" >
+                        <Button  x:Name="BtTerminarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="150" Height="35" Background="White" Click="BtTerminarContrato_Click" >
                             <StackPanel Orientation="Horizontal">
                                 <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractDelete.png"/>
                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Terminar</TextBlock>

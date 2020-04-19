@@ -130,12 +130,10 @@ namespace BeLife.Negocio
             Datos.BeLifeEntities bbdd = new Datos.BeLifeEntities();
 
             try
-            {
-                /* Se obtiene el primer registro coincidente con el Rut */
+            {                
                 Datos.Contrato contrato = bbdd.Contrato.First(e => e.RutCliente == RutCliente);
 
-                /* Se elimina el registro del EDM */
-                bbdd.Contrato.Remove(contrato);
+                CommonBC.Syncronize(this, contrato);
 
                 bbdd.SaveChanges();
 

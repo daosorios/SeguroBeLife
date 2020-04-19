@@ -55,8 +55,8 @@
                 <ColumnDefinition  Width="1*"/>
                 <ColumnDefinition  Width="0.3*"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="2">
-                <Button x:Name="BtIrCLiente" Content="Ir a Cliente" HorizontalAlignment="Center" Background="White"  VerticalAlignment="Top" Width="150" Height="35"/>
+            <Grid Grid.Column="1">
+                <Button x:Name="BtrefreshListadoCliente" Content="Reestablecer " HorizontalAlignment="Center" Background="White"  VerticalAlignment="Top" Width="150" Height="35" Click="BtrefreshListadoCliente_Click"/>
 
             </Grid>
             <Grid Grid.Column="3">

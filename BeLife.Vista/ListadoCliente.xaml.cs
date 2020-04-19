@@ -31,6 +31,19 @@ namespace BeLife.Vista
             CargarEstado();
 
         }
+
+        private void Limpiar()
+        {
+
+            TxFiltrarRut.Text = string.Empty;           
+            CbFiltrarSexo.SelectedIndex = 0;
+            CbFiltrarEstadoCivil.SelectedIndex = 0;
+
+            CargarSexo();
+            CargarEstado();
+            //CargarCliente();
+
+        }
         private void CargarSexo()
         {
             /* Carga todas los cliente */
@@ -61,6 +74,7 @@ namespace BeLife.Vista
             Cliente clientes = new Cliente();            
             DGlistadoClientes.ItemsSource = clientes.ReadAll();
            
+           
         }
 
         private void BtVolverListadoCliente_Click(object sender, RoutedEventArgs e)
@@ -82,6 +96,12 @@ namespace BeLife.Vista
         private void BtFiltroListadoCliente_Click(object sender, RoutedEventArgs e)
         {
             filtro();
+        }
+
+        private void BtrefreshListadoCliente_Click(object sender, RoutedEventArgs e)
+        {
+            CargarCliente();
+            Limpiar();
         }
     }
 }

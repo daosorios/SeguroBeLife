@@ -56,6 +56,7 @@ namespace BeLife.Vista
             TxObservaciones.Text = string.Empty;
             CbCodigoPlan.SelectedIndex = 0;
             NContrato.Content = "";
+            LbNombreCliente.Content = "";
             CargarContrato();
 
             //bloquear los datos
@@ -171,8 +172,20 @@ namespace BeLife.Vista
                 RutCliente = TxRutCliente.Text
             };
 
+
+            //Para buscar el nombre del cliente y ponerlo en contrato
             if (con.ReadContrato())
             {
+                Cliente cli = new Cliente()
+                {
+                    RutCliente = TxRutCliente.Text
+                };
+                if (cli.Read())
+                {
+                    LbNombreCliente.Content = "Cliente:"+ " " +cli.Nombres + " " + cli.Apellidos;
+                }       
+
+
                 NContrato.Content = con.Numero;
                 DpFechaCreacion.SelectedDate = con.FechaCreacion;
                 DpFechaInicioVig.SelectedDate = con.FechaInicioVigencia;

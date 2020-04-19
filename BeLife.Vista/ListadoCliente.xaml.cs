@@ -117,7 +117,7 @@ namespace BeLife.Vista
             Limpiar();
             if (DGlistadoClientes.SelectedItem == null) return;
             var selected = DGlistadoClientes.SelectedItem as Cliente;
-            //TxBuscarRutCliente.Text = selected.RutCliente.ToString();
+           
             ControladorListadoCliente.miFrame.NavigationService.Navigate(ControladorListadoCliente.registrarCliente);
             ControladorListadoCliente.registrarCliente.TxRut.Text = selected.RutCliente.ToString();
             ControladorListadoCliente.registrarCliente.BuscarCliente();

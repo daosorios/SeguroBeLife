@@ -92,6 +92,11 @@ namespace BeLife.Vista
             CargarContrato();
             Limpiar();
         }
+
+        private void DGListadoContrato_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+    
+        }
     }
 
 }

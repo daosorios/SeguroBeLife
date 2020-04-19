@@ -55,12 +55,13 @@ namespace BeLife.Negocio
             //metodo crear contrato base de dato
             Datos.BeLifeEntities bbdd = new Datos.BeLifeEntities();
             Datos.Contrato con = new Datos.Contrato();
-
+            
             try
             {
                 CommonBC.Syncronize(this, con);
 
                 bbdd.Contrato.Add(con);
+
                 bbdd.SaveChanges();
 
                 return true;
@@ -86,7 +87,7 @@ namespace BeLife.Negocio
 
                 /* Se copian las propiedades de datos al negocio */
                CommonBC.Syncronize(contrato, this);
-
+              
                 return true;
             }
             catch (Exception)

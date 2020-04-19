@@ -27,6 +27,7 @@ namespace BeLife.Vista
         {
             InitializeComponent();
             Limpiar();
+            
         }
 
 

@@ -255,6 +255,21 @@ namespace BeLife.Negocio
             }
 
         }
+        public IEnumerable<Cliente> ReadC(string rut)
+        {
+
+            if (rut.Length > 0)
+            {
+                IEnumerable<Cliente> a = from d in ReadAll()
+                                          where d.RutCliente == rut.ToString()
+                                          select d;
+                return a;
+            }
+            else
+            {
+                return ReadAll();
+            }
+        }
 
 
 

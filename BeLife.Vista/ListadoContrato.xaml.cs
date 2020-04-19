@@ -65,9 +65,7 @@ namespace BeLife.Vista
             DGListadoContrato.ItemsSource = con.ReadS(TxNumFiltroContrato.Text, TxRutFiltroContrato.Text, TxFiltroNumPoliza.Text);
         }//contrato, rut, poli
 
-
-
-
+        
         private void CargarContrato()
         {
             /* Carga todos los Empleados */

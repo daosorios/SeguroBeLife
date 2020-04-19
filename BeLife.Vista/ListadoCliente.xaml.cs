@@ -38,7 +38,7 @@ namespace BeLife.Vista
             TxFiltrarRut.Text = string.Empty;           
             CbFiltrarSexo.SelectedIndex = 0;
             CbFiltrarEstadoCivil.SelectedIndex = 0;
-            TxBuscarRutCliente.Text = string.Empty;
+            TxBuscarRutCliente.Text=string.Empty;
             CargarSexo();
             CargarEstado();
             //CargarCliente();
@@ -102,6 +102,12 @@ namespace BeLife.Vista
         {
             CargarCliente();
             Limpiar();
+        }
+
+        private void BtListaBuscarCliente_Click(object sender, RoutedEventArgs e)
+        {
+            Cliente cli = new Cliente();
+            DGlistadoClientes.ItemsSource = cli.ReadC(TxBuscarRutCliente.Text);
         }
     }
 }

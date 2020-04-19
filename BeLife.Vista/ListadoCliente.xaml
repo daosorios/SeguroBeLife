@@ -64,7 +64,7 @@
             </Grid>
             <Grid Grid.Column="4">
                 <Grid>
-                    <Button  x:Name="BtListaBuscarCliente" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="35" Background="White" >
+                    <Button  x:Name="BtListaBuscarCliente" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="35" Background="White" Click="BtListaBuscarCliente_Click" >
                         <StackPanel Orientation="Horizontal">
                             <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractSearch.png"/>
                             <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Buscar</TextBlock>

@@ -29,6 +29,16 @@ namespace BeLife.Vista
             CargarContrato();
         }
 
+        private void Limpiar()
+        {
+
+            TxRutFiltroContrato.Text = string.Empty;
+            TxNumFiltroContrato.Text = string.Empty;
+            TxFiltroNumPoliza.Text = string.Empty;
+            TxBuscarNumContrato.Text = string.Empty;      
+
+        }
+
         private void BtVolverListadoContrato_Click(object sender, RoutedEventArgs e)
         {
             CargarContrato();
@@ -77,6 +87,11 @@ namespace BeLife.Vista
             DGListadoContrato.ItemsSource = con.ReadF(TxBuscarNumContrato.Text);
         }
 
+        private void BtRefreshListadoContrato_Click(object sender, RoutedEventArgs e)
+        {
+            CargarContrato();
+            Limpiar();
+        }
     }
 
 }

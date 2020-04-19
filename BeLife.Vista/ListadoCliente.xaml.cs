@@ -38,7 +38,7 @@ namespace BeLife.Vista
             TxFiltrarRut.Text = string.Empty;           
             CbFiltrarSexo.SelectedIndex = 0;
             CbFiltrarEstadoCivil.SelectedIndex = 0;
-
+            TxBuscarRutCliente.Text = string.Empty;
             CargarSexo();
             CargarEstado();
             //CargarCliente();

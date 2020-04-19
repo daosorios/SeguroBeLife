@@ -23,11 +23,14 @@ namespace BeLife.Vista
     public partial class RegistrarContrato : Page
     {
         public MainWindow ControladorContrato;
+
         public RegistrarContrato()
         {
             InitializeComponent();
             LimpiarControles();
+            CargarContrato();
         }
+
 
         private void BtVolverContrato_Click(object sender, RoutedEventArgs e)
         {
@@ -84,7 +87,8 @@ namespace BeLife.Vista
             contrato.RutCliente = TxRutCliente.Text;
             contrato.FechaCreacion = (DateTime)DpFechaCreacion.SelectedDate;
             contrato.FechaInicioVigencia = (DateTime)DpFechaInicioVig.SelectedDate;
-            contrato.FechaFinVigencia = (DateTime)DpFechaFInVig.SelectedDate;
+            //el fin de la vigencia se calcula cin el inicio mas 1 año
+            contrato.FechaFinVigencia = ((DateTime)DpFechaInicioVig.SelectedDate).AddYears(1);
             contrato.PrimaMensual = Convert.ToDouble(TxPrimaMensual.Text);
             contrato.PrimaAnual = Convert.ToDouble(TxPrimaAnual.Text);
             contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();
@@ -121,6 +125,7 @@ namespace BeLife.Vista
                 MessageBox.Show("Contrato no pudo ser registrado", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
+
         private void BtBuscarContrato_Click(object sender, RoutedEventArgs e)
         {
             Contrato con = new Contrato()
@@ -174,8 +179,7 @@ namespace BeLife.Vista
                 MessageBox.Show("Contrato no pudo ser leído", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
-
-
+        
 
         ///Tengo que bloquear todos los datos solo dejar el observaciones***
         private void BtActualizarContrato_Click(object sender, RoutedEventArgs e)
@@ -223,10 +227,6 @@ namespace BeLife.Vista
             {
                 MessageBox.Show("Contrato no pudo ser registrado", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
-
-
-
-
         }
 
         private void BtLimpiarCliente_Click(object sender, RoutedEventArgs e)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BeLife.Negocio
 {
-    class Tarificador
+    public class Tarificador
     {
         private DateTime Fnacimiento { get; set; }
         private int Edad { get; set; }
@@ -61,32 +61,8 @@ namespace BeLife.Negocio
             }
         }
 
-        public int valorbase
-        {
-            get
-            {
-                return this.Valorbase;
-            }
-            set
-            {
-                if (value > 0 && value <= 20)
-                {
-                    this.Valorbase = value;
-                }
-                else if (value == 0)
-                {
-                    throw new ArgumentOutOfRangeException("El valor base es igual a 0");
-                }
-                else if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("El valor base es negativo");
-                }
-                else
-                {
-                    throw new ArgumentOutOfRangeException("El valor base es mayor a 20");
-                }
-            }
-        }
+        
+
 
         public double Clarec(int Edad, int sexo, int EstadoCivil)//Calculo de recargo
         {
@@ -132,16 +108,19 @@ namespace BeLife.Negocio
 
             return Recargo;
         }
+
+
         public double seguro(int UF, double Recargo)//Calculo de seguro multiplicando el recargo por las uf
         {
             this.Seguro = UF * Recargo;
             return Seguro;
         }
 
-        public int calcularEdad(DateTime Fnacimiento, DateTime fechaHoy)//Calcular la edad
+
+        public int calcularEdad(DateTime Fnacimiento)//Calcular la edad
 
         {
-            fechaHoy = DateTime.Today;
+            DateTime fechaHoy = DateTime.Today;
             Edad = fechaHoy.Year - Fnacimiento.Year;
 
             if (fechaHoy.Month < Fnacimiento.Month || (fechaHoy.Month == Fnacimiento.Month && fechaHoy.Day < Fnacimiento.Day))
@@ -150,5 +129,31 @@ namespace BeLife.Negocio
             }
             return Edad;
         }
+
+
+        public Double Prima_anual(int sexo, int EstadoCivil, String rut)
+        {
+            Datos.BeLifeEntities bbdd = new Datos.BeLifeEntities();
+
+
+            int sx = sexo;
+            int Ec = EstadoCivil;
+
+            //busco a la persona con este rut
+            Datos.Cliente cli = bbdd.Cliente.First(e => e.RutCliente == rut);
+            
+            //extraigo  la fecha de nacimiento
+            DateTime Fn = cli.FechaNacimiento;
+
+            //Combertir el el dato de fecha de nacimiento a edad  
+            int Edad = calcularEdad(Fn);
+
+            //captar la prima
+            Double Prima = Clarec(Edad, sx ,Ec);
+
+            return Prima;
+        }
+
+
     }
 }

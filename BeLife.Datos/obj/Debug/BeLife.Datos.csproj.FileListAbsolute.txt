@@ -20,3 +20,15 @@ C:\Users\danie\source\repos\SeguroBeLife\BeLife.Datos\obj\Debug\BeLife.Datos.csp
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Datos\obj\Debug\BeLife.Datos.csproj.CopyComplete
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Datos\obj\Debug\BeLife.Datos.dll
 C:\Users\danie\source\repos\SeguroBeLife\BeLife.Datos\obj\Debug\BeLife.Datos.pdb
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\bin\Debug\BeLife.Datos.dll.config
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\bin\Debug\BeLife.Datos.dll
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\bin\Debug\BeLife.Datos.pdb
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\obj\Debug\BeLife.Datos.csprojAssemblyReference.cache
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\obj\Debug\BeLife.Datos.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\obj\Debug\BeLife.Datos.csproj.CopyComplete
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\obj\Debug\BeLife.Datos.dll
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Datos\obj\Debug\BeLife.Datos.pdb

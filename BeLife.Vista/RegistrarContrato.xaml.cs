@@ -85,6 +85,7 @@ namespace BeLife.Vista
             //boton crear contrato en UI
             Contrato contrato = new Contrato();
 
+            Tarificador pr = new Tarificador();
 
             contrato.RutCliente = TxRutCliente.Text;
             contrato.FechaCreacion = (DateTime)DpFechaCreacion.SelectedDate;
@@ -92,7 +93,7 @@ namespace BeLife.Vista
             //el fin de la vigencia se calcula cin el inicio mas 1 año
             contrato.FechaFinVigencia = ((DateTime)DpFechaInicioVig.SelectedDate).AddYears(1);
             contrato.PrimaMensual = Convert.ToDouble(TxPrimaMensual.Text);
-            contrato.PrimaAnual = Convert.ToDouble(TxPrimaAnual.Text);
+            contrato.PrimaAnual = pr.Prima_anual(TxRutCliente.Text);
             contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();        
             contrato.Observaciones = TxObservaciones.Text;
 

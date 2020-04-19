@@ -30,7 +30,7 @@ namespace BeLife.Vista
             LimpiarControles();
             CargarContrato();
 
-            
+
 
         }
 
@@ -68,7 +68,7 @@ namespace BeLife.Vista
             TxPrimaMensual.IsEnabled = false;
             ChBDeclaracionSalud.IsEnabled = true;
             CbCodigoPlan.IsEnabled = true;
-            
+
         }
 
         //cargar el combobox 
@@ -93,27 +93,27 @@ namespace BeLife.Vista
 
             Tarificador pr = new Tarificador();
 
-            Double Prianual    =  pr.Prima_anual(TxRutCliente.Text);
-            
-            if      (CbCodigoPlan.SelectedIndex == 0)
+            Double Prianual = pr.Prima_anual(TxRutCliente.Text);
+
+            if (CbCodigoPlan.SelectedIndex == 0)
             {
-                Prianual = Prianual +0.5;
+                Prianual = Prianual + 0.5;
             }
             else if (CbCodigoPlan.SelectedIndex == 1)
             {
-                Prianual = Prianual +3.5;
+                Prianual = Prianual + 3.5;
             }
             else if (CbCodigoPlan.SelectedIndex == 2)
             {
-                Prianual = Prianual +1.2;
+                Prianual = Prianual + 1.2;
             }
             else if (CbCodigoPlan.SelectedIndex == 3)
             {
-                Prianual = Prianual +2;
+                Prianual = Prianual + 2;
             }
             else if (CbCodigoPlan.SelectedIndex == 4)
             {
-                Prianual = Prianual +3.5;
+                Prianual = Prianual + 3.5;
             }
 
 
@@ -127,10 +127,10 @@ namespace BeLife.Vista
             //el fin de la vigencia se calcula cin el inicio mas 1 año
             contrato.FechaFinVigencia = ((DateTime)DpFechaInicioVig.SelectedDate).AddYears(1);
             //registro automatico de la prima mensual
-            contrato.PrimaMensual     =  Primensual;
+            contrato.PrimaMensual = Primensual;
             //registro automatico de la prima anual 
-            contrato.PrimaAnual       =    Prianual;
-            contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();        
+            contrato.PrimaAnual = Prianual;
+            contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();
             contrato.Observaciones = TxObservaciones.Text;
 
             if (ChBDeclaracionSalud.IsChecked == true)
@@ -221,7 +221,7 @@ namespace BeLife.Vista
                 DpFechaFInVig.IsEnabled = false;
                 TxPrimaAnual.IsEnabled = false;
                 TxPrimaMensual.IsEnabled = false;
-                
+
                 ChBDeclaracionSalud.IsEnabled = false;
                 CbCodigoPlan.IsEnabled = false;
                 DpFechaInicioVig.IsEnabled = false;
@@ -233,7 +233,7 @@ namespace BeLife.Vista
                 MessageBox.Show("Contrato no pudo ser leído", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
-        
+
 
         ///Tengo que bloquear todos los datos solo dejar el observaciones***
         private void BtActualizarContrato_Click(object sender, RoutedEventArgs e)
@@ -247,7 +247,7 @@ namespace BeLife.Vista
             contrato.FechaFinVigencia = (DateTime)DpFechaFInVig.SelectedDate;
             contrato.PrimaMensual = Convert.ToDouble(TxPrimaMensual.Text);
             contrato.PrimaAnual = Convert.ToDouble(TxPrimaAnual.Text);
-            contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();         
+            contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();
             contrato.Observaciones = TxObservaciones.Text;
             ChBVigencia.IsEnabled = true;
 
@@ -328,6 +328,20 @@ namespace BeLife.Vista
             {
                 MessageBox.Show("Contrato no puede ser terminado", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            String messageBoxText = "VID01  Prima Base: 0.5\n" +
+                                        "VID02  Prima Base: 3.5\n" +
+                                        "VID03  Prima Base: 1.2\n" +
+                                        "VID04  Prima Base: 2.0\n" +
+                                        "VID05  Prima Base: 3.5\n";
+            String caption = "Informacion de planes";
+            MessageBoxButton button = MessageBoxButton.OK;
+            MessageBoxImage icon = MessageBoxImage.Information;
+
+            MessageBox.Show(messageBoxText, caption, button, icon);
         }
     }
 }

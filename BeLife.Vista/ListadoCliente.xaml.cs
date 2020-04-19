@@ -31,6 +31,19 @@ namespace BeLife.Vista
             CargarEstado();
 
         }
+
+        private void Limpiar()
+        {
+
+            TxFiltrarRut.Text = string.Empty;           
+            CbFiltrarSexo.SelectedIndex = 0;
+            CbFiltrarEstadoCivil.SelectedIndex = 0;
+            TxBuscarRutCliente.Text=string.Empty;
+            CargarSexo();
+            CargarEstado();
+            //CargarCliente();
+
+        }
         private void CargarSexo()
         {
             /* Carga todas los cliente */
@@ -61,6 +74,7 @@ namespace BeLife.Vista
             Cliente clientes = new Cliente();            
             DGlistadoClientes.ItemsSource = clientes.ReadAll();
            
+           
         }
 
         private void BtVolverListadoCliente_Click(object sender, RoutedEventArgs e)
@@ -82,6 +96,31 @@ namespace BeLife.Vista
         private void BtFiltroListadoCliente_Click(object sender, RoutedEventArgs e)
         {
             filtro();
+        }
+
+        private void BtrefreshListadoCliente_Click(object sender, RoutedEventArgs e)
+        {
+            CargarCliente();
+            Limpiar();
+        }
+
+        private void BtListaBuscarCliente_Click(object sender, RoutedEventArgs e)
+        {
+            Cliente cli = new Cliente();
+            DGlistadoClientes.ItemsSource = cli.ReadC(TxBuscarRutCliente.Text);
+        }
+
+
+        //metodo para seleccionar al cliente de la lista con doble click y manda los datos al registro cliente
+        private void DGlistadoClientes_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Limpiar();
+            if (DGlistadoClientes.SelectedItem == null) return;
+            var selected = DGlistadoClientes.SelectedItem as Cliente;
+            //TxBuscarRutCliente.Text = selected.RutCliente.ToString();
+            ControladorListadoCliente.miFrame.NavigationService.Navigate(ControladorListadoCliente.registrarCliente);
+            ControladorListadoCliente.registrarCliente.TxRut.Text = selected.RutCliente.ToString();
+            ControladorListadoCliente.registrarCliente.BuscarCliente();
         }
     }
 }

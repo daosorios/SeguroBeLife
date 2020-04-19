@@ -27,6 +27,7 @@ namespace BeLife.Vista
         {
             InitializeComponent();
             Limpiar();
+            
         }
 
 
@@ -124,6 +125,32 @@ namespace BeLife.Vista
                 MessageBox.Show("Cliente no pudo ser leído", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
+
+        //este es solo para la seleccion de la lista 
+        public void BuscarCliente()
+        {
+            Cliente cli = new Cliente()
+            {
+                RutCliente = TxRut.Text
+            };
+
+            if (cli.Read())
+            {
+                TxNombres.Text = cli.Nombres;
+                TxApellidos.Text = cli.Apellidos;
+                DpFechaNacimiento.SelectedDate = cli.FechaNacimiento;
+                CbSexo.SelectedValue = cli.IdSexo;
+                CbEstadoCivil.SelectedValue = cli.IdEstadoCivil;
+
+
+                MessageBox.Show("Cliente leído", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show("Cliente no pudo ser leído", "Atención", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+        }
+
 
         private void BtActualizarCliente_Click(object sender, RoutedEventArgs e)
         {

@@ -55,8 +55,8 @@
                 <ColumnDefinition  Width="1*"/>
                 <ColumnDefinition  Width="0.3*"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="2">
-                <Button x:Name="BtIrCLiente" Content="Ir a Cliente" HorizontalAlignment="Center" Background="White"  VerticalAlignment="Top" Width="150" Height="35"/>
+            <Grid Grid.Column="1">
+                <Button x:Name="BtrefreshListadoCliente" Content="Reestablecer " HorizontalAlignment="Center" Background="White"  VerticalAlignment="Top" Width="150" Height="35" Click="BtrefreshListadoCliente_Click"/>
 
             </Grid>
             <Grid Grid.Column="3">
@@ -64,7 +64,7 @@
             </Grid>
             <Grid Grid.Column="4">
                 <Grid>
-                    <Button  x:Name="BtListaBuscarCliente" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="35" Background="White" >
+                    <Button  x:Name="BtListaBuscarCliente" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="35" Background="White" Click="BtListaBuscarCliente_Click" >
                         <StackPanel Orientation="Horizontal">
                             <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractSearch.png"/>
                             <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Buscar</TextBlock>
@@ -77,7 +77,7 @@
 
         <!--fila del data grid  tabla-->
         <Grid Grid.Row="3"  >
-            <DataGrid x:Name="DGlistadoClientes"  HorizontalAlignment="Center" Background="Lavender"  VerticalAlignment="Stretch" Width="760" Height="220" SelectionChanged="DGlistadoClientes_SelectionChanged" />
+            <DataGrid x:Name="DGlistadoClientes" IsReadOnly="True" MouseDoubleClick="DGlistadoClientes_MouseDoubleClick" HorizontalAlignment="Center" Background="Lavender"  VerticalAlignment="Stretch" Width="760" Height="220" SelectionChanged="DGlistadoClientes_SelectionChanged" />
         </Grid>
 
         <!--fila filtro por-->

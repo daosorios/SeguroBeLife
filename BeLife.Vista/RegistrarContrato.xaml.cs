@@ -29,6 +29,9 @@ namespace BeLife.Vista
             InitializeComponent();
             LimpiarControles();
             CargarContrato();
+
+            
+
         }
 
 
@@ -59,8 +62,9 @@ namespace BeLife.Vista
             TxRutCliente.IsEnabled = true;
             DpFechaCreacion.IsEnabled = true;
             DpFechaFInVig.IsEnabled = true;
-            TxPrimaAnual.IsEnabled = true;
-            TxPrimaMensual.IsEnabled = true;
+            DpFechaInicioVig.IsEnabled = false;
+            TxPrimaAnual.IsEnabled = false;
+            TxPrimaMensual.IsEnabled = false;
             ChBDeclaracionSalud.IsEnabled = true;
             CbCodigoPlan.IsEnabled = true;
             
@@ -113,6 +117,7 @@ namespace BeLife.Vista
 
 
             Double Primensual = pr.Prima_anual(TxRutCliente.Text) / 12;
+
 
 
             contrato.RutCliente = TxRutCliente.Text;
@@ -203,7 +208,10 @@ namespace BeLife.Vista
                 DpFechaFInVig.IsEnabled = false;
                 TxPrimaAnual.IsEnabled = false;
                 TxPrimaMensual.IsEnabled = false;
+                
                 ChBDeclaracionSalud.IsEnabled = false;
+                CbCodigoPlan.IsEnabled = false;
+                DpFechaInicioVig.IsEnabled = false;
 
                 MessageBox.Show("Contrato leído", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
             }
@@ -226,10 +234,9 @@ namespace BeLife.Vista
             contrato.FechaFinVigencia = (DateTime)DpFechaFInVig.SelectedDate;
             contrato.PrimaMensual = Convert.ToDouble(TxPrimaMensual.Text);
             contrato.PrimaAnual = Convert.ToDouble(TxPrimaAnual.Text);
-            contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();
-            //contrato.CodigoPlan = "VID05";
+            contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();         
             contrato.Observaciones = TxObservaciones.Text;
-
+            ChBVigencia.IsEnabled = true;
 
             if (ChBVigencia.IsChecked == true)
             {
@@ -278,8 +285,8 @@ namespace BeLife.Vista
             contrato.PrimaMensual = Convert.ToDouble(TxPrimaMensual.Text);
             contrato.PrimaAnual = Convert.ToDouble(TxPrimaAnual.Text);
             contrato.CodigoPlan = CbCodigoPlan.SelectedValue.ToString();
-            //contrato.CodigoPlan = "VID05";
             contrato.Observaciones = TxObservaciones.Text;
+            ChBVigencia.IsEnabled = false;
 
             if (ChBVigencia.IsChecked == true)
             {
@@ -302,6 +309,7 @@ namespace BeLife.Vista
             {
                 MessageBox.Show("Contrato Terminado", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
                 LimpiarControles();
+                ChBVigencia.IsEnabled = true;
             }
             else
             {

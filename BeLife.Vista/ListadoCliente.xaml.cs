@@ -109,5 +109,18 @@ namespace BeLife.Vista
             Cliente cli = new Cliente();
             DGlistadoClientes.ItemsSource = cli.ReadC(TxBuscarRutCliente.Text);
         }
+
+
+        //metodo para seleccionar al cliente de la lista con doble click y manda los datos al registro cliente
+        private void DGlistadoClientes_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Limpiar();
+            if (DGlistadoClientes.SelectedItem == null) return;
+            var selected = DGlistadoClientes.SelectedItem as Cliente;
+            //TxBuscarRutCliente.Text = selected.RutCliente.ToString();
+            ControladorListadoCliente.miFrame.NavigationService.Navigate(ControladorListadoCliente.registrarCliente);
+            ControladorListadoCliente.registrarCliente.TxRut.Text = selected.RutCliente.ToString();
+            ControladorListadoCliente.registrarCliente.BuscarCliente();
+        }
     }
 }

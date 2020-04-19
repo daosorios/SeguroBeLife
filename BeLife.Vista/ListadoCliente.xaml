@@ -77,7 +77,7 @@
 
         <!--fila del data grid  tabla-->
         <Grid Grid.Row="3"  >
-            <DataGrid x:Name="DGlistadoClientes"  HorizontalAlignment="Center" Background="Lavender"  VerticalAlignment="Stretch" Width="760" Height="220" SelectionChanged="DGlistadoClientes_SelectionChanged" />
+            <DataGrid x:Name="DGlistadoClientes" IsReadOnly="True" MouseDoubleClick="DGlistadoClientes_MouseDoubleClick" HorizontalAlignment="Center" Background="Lavender"  VerticalAlignment="Stretch" Width="760" Height="220" SelectionChanged="DGlistadoClientes_SelectionChanged" />
         </Grid>
 
         <!--fila filtro por-->

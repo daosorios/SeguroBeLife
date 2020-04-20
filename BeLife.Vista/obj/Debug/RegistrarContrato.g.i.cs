@@ -99,6 +99,14 @@ namespace BeLife.Vista {
         
         #line 140 "..\..\RegistrarContrato.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button bn_info;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 125 "..\..\RegistrarContrato.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button BtLimpiarContrato;
         
         #line default

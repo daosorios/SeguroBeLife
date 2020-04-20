@@ -14,7 +14,18 @@ namespace BeLife.Negocio.Tests
         [TestMethod()]
         public void ClarecTest()
         {
-            Assert.Fail();
+            Tarificador tarifa = new Tarificador();
+            try
+            {
+                tarifa.Clarec(17, 1, 2);
+                return;
+            }
+            catch (Exception ex)
+            {
+                StringAssert.Contains(ex.Message, "Datos invalidos");
+                return;
+            }
+            Assert.Fail("No se genero tarifa por datos invalidos");
         }
     }
 }

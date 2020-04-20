@@ -1,0 +1,43 @@
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\BeLife.Negocio.dll.config
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\BeLife.Negocio.dll
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\BeLife.Negocio.pdb
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\BeLife.Datos.dll
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\EntityFramework.dll
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\BeLife.Datos.pdb
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\BeLife.Datos.dll.config
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\EntityFramework.xml
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.csprojAssemblyReference.cache
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.csproj.CopyComplete
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.dll
+C:\Users\danie\source\repos\SegurosBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.pdb
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Negocio.dll.config
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Negocio.dll
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Negocio.pdb
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Datos.dll
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\EntityFramework.dll
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Datos.pdb
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Datos.dll.config
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\EntityFramework.xml
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.csprojAssemblyReference.cache
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.csproj.CopyComplete
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.dll
+C:\Users\danie\source\repos\SeguroBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.pdb
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Negocio.dll.config
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Negocio.dll
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Negocio.pdb
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Datos.dll
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\EntityFramework.dll
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Datos.pdb
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\BeLife.Datos.dll.config
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\EntityFramework.xml
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.csprojAssemblyReference.cache
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.csproj.CopyComplete
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.dll
+C:\Users\HP\Documents\aaaaaaaaaaa3ersem\DESARROLLO EAs\SeguroBeLife\BeLife.Negocio\obj\Debug\BeLife.Negocio.pdb

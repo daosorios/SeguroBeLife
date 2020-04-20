@@ -5,10 +5,308 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BeLife.Vista"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="900" Background="White"
       Title="RegistrarContrato">
 
     <Grid>
-        
+        <Grid>
+            <!--definiendo filas-->
+            <Grid.RowDefinitions >
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+               
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Button x:Name="BtVolverContrato" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFD69CEC" Click="BtVolverContrato_Click" >
+                    <StackPanel Orientation="Horizontal" >
+                        <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/Logo BeLife.png"/>
+                    </StackPanel>
+                </Button>
+                <Label Content="Volver" Margin="5" HorizontalAlignment="Left"  VerticalAlignment="Bottom"/>
+                <Label Content="Contrato de Vida" HorizontalAlignment="Right"  VerticalAlignment="Top"/>
+            </Grid>
+            
+            
+            <Grid Grid.Row="1"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content=""  FontWeight="DemiBold"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Label Content="" x:Name="LbNombreCliente" FontWeight="DemiBold"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+            </Grid>
+            
+
+            <Grid Grid.Row="2"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="N° Contrato"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Label Content="" Name="NContrato" FontWeight="DemiBold"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+
+            </Grid>
+
+
+            <Grid Grid.Row="3"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+                    <Label Content="Rut Cliente" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <TextBox x:Name="TxRutCliente" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Grid>
+                        <Button x:Name="BtBuscarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" Click="BtBuscarContrato_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractSearch.png"/>
+                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Buscar</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+
+            <Grid Grid.Row="4"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="Fecha Creación" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <DatePicker Name="DpFechaCreacion" HorizontalAlignment="Left"  VerticalAlignment="Top"  Width="160"/>
+                </Grid>
+            </Grid>
+
+
+            <Grid Grid.Row="5"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="Código de Plan" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+
+                    <ComboBox x:Name="CbCodigoPlan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" SelectedIndex="0" />
+                    
+                    <Button x:Name="bn_info"  HorizontalAlignment="Left" Margin="173,-6,0,0" VerticalAlignment="Top" Width="42" Height="40" Background="white" Click="Button_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/info.png"/>
+                        </StackPanel>
+                    </Button>
+
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Button x:Name="BtLimpiarContrato" Content="Limpiar" HorizontalAlignment="Left" VerticalAlignment="Top"  Background="White" Width="150" Height="35" Click="BtLimpiarCliente_Click"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="6"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="Fecha Inicio Vigencia" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <DatePicker Name="DpFechaInicioVig" HorizontalAlignment="Left"  VerticalAlignment="Top"  Width="160"/>
+                </Grid>
+            </Grid>
+
+
+            <Grid Grid.Row="7"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="Fecha Fin Vigencia" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <DatePicker Name="DpFechaFInVig" HorizontalAlignment="Left"  VerticalAlignment="Top"  Width="160"/>
+                </Grid>
+            </Grid>
+
+
+            <Grid Grid.Row="8"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="Vigente" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <CheckBox  x:Name="ChBVigencia" HorizontalAlignment="Left"  VerticalAlignment="Stretch"/>
+
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="9"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="Declaración de Salud" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <CheckBox  x:Name="ChBDeclaracionSalud" HorizontalAlignment="Left"  VerticalAlignment="Stretch"/>
+
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="10"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="Prima Anual" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <TextBox x:Name="TxPrimaAnual" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="11"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="Prima Mensual" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <TextBox x:Name="TxPrimaMensual"  HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="160"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="12"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Label Content="Observaciones" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <TextBox x:Name="TxObservaciones" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="13"  >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.2*"/>
+                    <ColumnDefinition  Width="1*" />
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="1*"/>
+                    <ColumnDefinition  Width="0.1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <Grid>
+                        <Button x:Name="BtCrearContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" Click="BtCrearContrato_Click"  >
+                            <StackPanel Orientation="Horizontal">
+                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractAdd.png"/>
+                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Crear</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Grid>
+
+
+                <Grid Grid.Column="2">
+                    <Grid>
+                        <Button x:Name="BtActualizarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"   Width="150" Height="35" Background="White" Click="BtActualizarContrato_Click"  >
+                            <StackPanel Orientation="Horizontal">
+                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractUpdate.png"/>
+                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Actualizar</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Column="3">
+                    <Grid>
+                        <Button  x:Name="BtTerminarContrato" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="150" Height="35" Background="White" Click="BtTerminarContrato_Click" >
+                            <StackPanel Orientation="Horizontal">
+                                <Image HorizontalAlignment="Center" Height="30"  VerticalAlignment="Center"  Source="Imagenes/ContractDelete.png"/>
+                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Terminar</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Grid>
+
+            </Grid>
+        </Grid>
     </Grid>
 </Page>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BeLifeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="RutCliente" />
+    </Key>
+    <Property Name="RutCliente" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Nombres" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Apellidos" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="datetime" Nullable="false" />
+    <Property Name="IdSexo" Type="int" Nullable="false" />
+    <Property Name="IdEstadoCivil" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contrato">
+    <Key>
+      <PropertyRef Name="Numero" />
+      <PropertyRef Name="RutCliente" />
+      <PropertyRef Name="CodigoPlan" />
+    </Key>
+    <Property Name="Numero" Type="nvarchar" MaxLength="14" Nullable="false" />
+    <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="RutCliente" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CodigoPlan" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="FechaInicioVigencia" Type="datetime" Nullable="false" />
+    <Property Name="FechaFinVigencia" Type="datetime" Nullable="false" />
+    <Property Name="Vigente" Type="bit" Nullable="false" />
+    <Property Name="DeclaracionSalud" Type="bit" Nullable="false" />
+    <Property Name="PrimaAnual" Type="float" Nullable="false" />
+    <Property Name="PrimaMensual" Type="float" Nullable="false" />
+    <Property Name="Observaciones" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EstadoCivil">
+    <Key>
+      <PropertyRef Name="IdEstadoCivil" />
+    </Key>
+    <Property Name="IdEstadoCivil" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Plan">
+    <Key>
+      <PropertyRef Name="IdPlan" />
+    </Key>
+    <Property Name="IdPlan" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PrimaBase" Type="float" Nullable="false" />
+    <Property Name="PolizaActual" Type="nvarchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sexo">
+    <Key>
+      <PropertyRef Name="IdSexo" />
+    </Key>
+    <Property Name="IdSexo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="Cliente_EstadoCivil_FK1">
+    <End Role="EstadoCivil" Type="Self.EstadoCivil" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoCivil">
+        <PropertyRef Name="IdEstadoCivil" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdEstadoCivil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Cliente_Sexo_FK1">
+    <End Role="Sexo" Type="Self.Sexo" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sexo">
+        <PropertyRef Name="IdSexo" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdSexo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Contrato_Cliente_FK1">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="RutCliente" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="RutCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Contrato_Plan_FK1">
+    <End Role="Plan" Type="Self.Plan" Multiplicity="1" />
+    <End Role="Contrato" Type="Self.Contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plan">
+        <PropertyRef Name="IdPlan" />
+      </Principal>
+      <Dependent Role="Contrato">
+        <PropertyRef Name="CodigoPlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BeLifeModelStoreContainer">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contrato" EntityType="Self.Contrato" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EstadoCivil" EntityType="Self.EstadoCivil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Plan" EntityType="Self.Plan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sexo" EntityType="Self.Sexo" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="Cliente_EstadoCivil_FK1" Association="Self.Cliente_EstadoCivil_FK1">
+      <End Role="EstadoCivil" EntitySet="EstadoCivil" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="Cliente_Sexo_FK1" Association="Self.Cliente_Sexo_FK1">
+      <End Role="Sexo" EntitySet="Sexo" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="Contrato_Cliente_FK1" Association="Self.Contrato_Cliente_FK1">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+    <AssociationSet Name="Contrato_Plan_FK1" Association="Self.Contrato_Plan_FK1">
+      <End Role="Plan" EntitySet="Plan" />
+      <End Role="Contrato" EntitySet="Contrato" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
